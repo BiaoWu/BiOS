@@ -9,7 +9,7 @@
         <!--Tab Or Hold CounterVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TabOrHoldCounterVC" customModule="BiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TabOrHoldCounterVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="481" y="510" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWL-sc-l9t"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eoz-te-wNc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,8 +47,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="usy-lg-uWU" id="YXm-wK-8pT"/>
-                        <outlet property="tabBtn" destination="DPP-uY-ZB6" id="vVT-2A-MoP"/>
+                        <outlet property="countLabel" destination="usy-lg-uWU" id="ANX-a3-1tk"/>
+                        <outlet property="tabBtn" destination="DPP-uY-ZB6" id="lyG-XN-wyS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
