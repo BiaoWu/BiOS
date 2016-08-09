@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabOrHoldCounterVC: UIViewController {
+class TapOrHoldCounterVC: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var tabBtn: UIButton!
     

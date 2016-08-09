@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class MainModel {
-    let tapOrHolderCounter = "01.TabOrHoldCounter"
+    let tapOrHolderCounter = "01.TapOrHoldCounter"
     
     private var data = [String]()
     
@@ -29,7 +29,7 @@ class MainModel {
     func providerVc(name: String) -> UIViewController? {
         switch name {
         case tapOrHolderCounter:
-            return UIStoryboard.init(name: "TabOrHoldCounter", bundle: nil).instantiateInitialViewController()
+            return UIStoryboard.init(name: "TapOrHoldCounter", bundle: nil).instantiateInitialViewController()
         default:
             return nil
         }
