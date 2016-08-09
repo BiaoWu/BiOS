@@ -8,26 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD341D59AE36009731BF /* AppDelegate.swift */; };
-		4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD361D59AE36009731BF /* MainViewController.swift */; };
 		4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD381D59AE36009731BF /* Main.storyboard */; };
 		4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD3B1D59AE36009731BF /* Assets.xcassets */; };
 		4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD3D1D59AE36009731BF /* LaunchScreen.storyboard */; };
 		4E40BD4B1D59B26E009731BF /* TabOrHoldCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD491D59B26E009731BF /* TabOrHoldCounter.storyboard */; };
 		4E40BD4C1D59B26E009731BF /* TabOrHoldCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD4A1D59B26E009731BF /* TabOrHoldCounterVC.swift */; };
-		4E40BD501D59B71C009731BF /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD4F1D59B71C009731BF /* MainModel.swift */; };
+		4E40BD551D59C196009731BF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD541D59C196009731BF /* MainViewController.m */; };
+		4E40BD571D59C1D4009731BF /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD561D59C1D4009731BF /* MainModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E40BD311D59AE36009731BF /* BiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E40BD341D59AE36009731BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E40BD361D59AE36009731BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4E40BD391D59AE36009731BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E40BD3B1D59AE36009731BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E40BD3E1D59AE36009731BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E40BD401D59AE36009731BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E40BD491D59B26E009731BF /* TabOrHoldCounter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TabOrHoldCounter.storyboard; path = 01.TabOrHoldCounter/TabOrHoldCounter.storyboard; sourceTree = "<group>"; };
 		4E40BD4A1D59B26E009731BF /* TabOrHoldCounterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabOrHoldCounterVC.swift; path = 01.TabOrHoldCounter/TabOrHoldCounterVC.swift; sourceTree = "<group>"; };
-		4E40BD4F1D59B71C009731BF /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		4E40BD531D59C196009731BF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4E40BD541D59C196009731BF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4E40BD561D59C1D4009731BF /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		4E40BD581D59C23F009731BF /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				4E40BD481D59B19C009731BF /* 01.TabOrHoldCounter */,
-				4E40BD361D59AE36009731BF /* MainViewController.swift */,
+				4E40BD531D59C196009731BF /* MainViewController.h */,
+				4E40BD541D59C196009731BF /* MainViewController.m */,
 				4E40BD381D59AE36009731BF /* Main.storyboard */,
-				4E40BD4F1D59B71C009731BF /* MainModel.swift */,
+				4E40BD581D59C23F009731BF /* MainModel.h */,
+				4E40BD561D59C1D4009731BF /* MainModel.m */,
 				4E40BD3B1D59AE36009731BF /* Assets.xcassets */,
 				4E40BD341D59AE36009731BF /* AppDelegate.swift */,
 				4E40BD3D1D59AE36009731BF /* LaunchScreen.storyboard */,
@@ -154,9 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
+				4E40BD551D59C196009731BF /* MainViewController.m in Sources */,
+				4E40BD571D59C1D4009731BF /* MainModel.m in Sources */,
 				4E40BD4C1D59B26E009731BF /* TabOrHoldCounterVC.swift in Sources */,
-				4E40BD501D59B71C009731BF /* MainModel.swift in Sources */,
 				4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +276,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biao.BiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -283,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biao.BiOS;
