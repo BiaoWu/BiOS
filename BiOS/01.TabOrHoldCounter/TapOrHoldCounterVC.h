@@ -1,5 +1,5 @@
 //
-//  TabOrHoldCounterVC.h
+//  TapOrHoldCounterVC.h
 //  BiOS
 //
 //  Created by BiaoWu on 16/8/9.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabOrHoldCounterVC : UIViewController
+@interface TapOrHoldCounterVC : UIViewController
 
 @end

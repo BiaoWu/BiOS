@@ -11,10 +11,10 @@
 		4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD381D59AE36009731BF /* Main.storyboard */; };
 		4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD3B1D59AE36009731BF /* Assets.xcassets */; };
 		4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD3D1D59AE36009731BF /* LaunchScreen.storyboard */; };
-		4E40BD4B1D59B26E009731BF /* TabOrHoldCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD491D59B26E009731BF /* TabOrHoldCounter.storyboard */; };
+		4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD491D59B26E009731BF /* TapOrHoldCounter.storyboard */; };
 		4E40BD551D59C196009731BF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD541D59C196009731BF /* MainViewController.m */; };
 		4E40BD571D59C1D4009731BF /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD561D59C1D4009731BF /* MainModel.m */; };
-		4E40BD5E1D59D25E009731BF /* TabOrHoldCounterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD5D1D59D25E009731BF /* TabOrHoldCounterVC.m */; };
+		4E40BD5E1D59D25E009731BF /* TapOrHoldCounterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD5D1D59D25E009731BF /* TapOrHoldCounterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +24,13 @@
 		4E40BD3B1D59AE36009731BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E40BD3E1D59AE36009731BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E40BD401D59AE36009731BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E40BD491D59B26E009731BF /* TabOrHoldCounter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TabOrHoldCounter.storyboard; path = 01.TabOrHoldCounter/TabOrHoldCounter.storyboard; sourceTree = "<group>"; };
+		4E40BD491D59B26E009731BF /* TapOrHoldCounter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TapOrHoldCounter.storyboard; path = 01.TabOrHoldCounter/TapOrHoldCounter.storyboard; sourceTree = "<group>"; };
 		4E40BD531D59C196009731BF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4E40BD541D59C196009731BF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4E40BD561D59C1D4009731BF /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		4E40BD581D59C23F009731BF /* MainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
-		4E40BD5C1D59D25E009731BF /* TabOrHoldCounterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabOrHoldCounterVC.h; path = 01.TabOrHoldCounter/TabOrHoldCounterVC.h; sourceTree = "<group>"; };
-		4E40BD5D1D59D25E009731BF /* TabOrHoldCounterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabOrHoldCounterVC.m; path = 01.TabOrHoldCounter/TabOrHoldCounterVC.m; sourceTree = "<group>"; };
+		4E40BD5C1D59D25E009731BF /* TapOrHoldCounterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapOrHoldCounterVC.h; path = 01.TabOrHoldCounter/TapOrHoldCounterVC.h; sourceTree = "<group>"; };
+		4E40BD5D1D59D25E009731BF /* TapOrHoldCounterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapOrHoldCounterVC.m; path = 01.TabOrHoldCounter/TapOrHoldCounterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
-				4E40BD481D59B19C009731BF /* 01.TabOrHoldCounter */,
+				4E40BD481D59B19C009731BF /* 01.TapOrHoldCounter */,
 				4E40BD531D59C196009731BF /* MainViewController.h */,
 				4E40BD541D59C196009731BF /* MainViewController.m */,
 				4E40BD381D59AE36009731BF /* Main.storyboard */,
@@ -77,14 +77,14 @@
 			path = BiOS;
 			sourceTree = "<group>";
 		};
-		4E40BD481D59B19C009731BF /* 01.TabOrHoldCounter */ = {
+		4E40BD481D59B19C009731BF /* 01.TapOrHoldCounter */ = {
 			isa = PBXGroup;
 			children = (
-				4E40BD491D59B26E009731BF /* TabOrHoldCounter.storyboard */,
-				4E40BD5C1D59D25E009731BF /* TabOrHoldCounterVC.h */,
-				4E40BD5D1D59D25E009731BF /* TabOrHoldCounterVC.m */,
+				4E40BD491D59B26E009731BF /* TapOrHoldCounter.storyboard */,
+				4E40BD5C1D59D25E009731BF /* TapOrHoldCounterVC.h */,
+				4E40BD5D1D59D25E009731BF /* TapOrHoldCounterVC.m */,
 			);
-			name = 01.TabOrHoldCounter;
+			name = 01.TapOrHoldCounter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +149,7 @@
 				4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */,
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
-				4E40BD4B1D59B26E009731BF /* TabOrHoldCounter.storyboard in Resources */,
+				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +162,7 @@
 			files = (
 				4E40BD551D59C196009731BF /* MainViewController.m in Sources */,
 				4E40BD571D59C1D4009731BF /* MainModel.m in Sources */,
-				4E40BD5E1D59D25E009731BF /* TabOrHoldCounterVC.m in Sources */,
+				4E40BD5E1D59D25E009731BF /* TapOrHoldCounterVC.m in Sources */,
 				4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

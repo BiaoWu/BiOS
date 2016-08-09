@@ -1,14 +1,14 @@
 //
-//  TabOrHoldCounterVC.m
+//  TapOrHoldCounterVC.m
 //  BiOS
 //
 //  Created by BiaoWu on 16/8/9.
 //  Copyright © 2016年 BiaoWu. All rights reserved.
 //
 
-#import "TabOrHoldCounterVC.h"
+#import "TapOrHoldCounterVC.h"
 
-@interface TabOrHoldCounterVC ()
+@interface TapOrHoldCounterVC ()
 
 @property(weak, nonatomic) IBOutlet UILabel *countLabel;
 @property(weak, nonatomic) IBOutlet UIButton *tabBtn;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation TabOrHoldCounterVC
+@implementation TapOrHoldCounterVC
 
 - (void)setCount:(NSUInteger)count {
   _count = count;

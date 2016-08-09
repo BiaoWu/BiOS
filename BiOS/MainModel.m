@@ -16,7 +16,7 @@
 
 @implementation MainModel
 
-NSString *tapOrHolder = @"01.TabOrHoldCounter";
+NSString *tapOrHolder = @"01.TapOrHoldCounter";
 
 NSMutableArray *data;
 
@@ -43,7 +43,7 @@ NSMutableArray *data;
   NSString *name = [self getItem:index];
   if ([name isEqualToString:tapOrHolder]) {
     UIStoryboard *storyboard =
-        [UIStoryboard storyboardWithName:@"TabOrHoldCounter" bundle:nil];
+        [UIStoryboard storyboardWithName:@"TapOrHoldCounter" bundle:nil];
     return [storyboard instantiateInitialViewController];
   } else {
     return nil;
