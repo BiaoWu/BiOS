@@ -26,7 +26,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPP-uY-ZB6">
                                 <rect key="frame" x="264" y="318" width="72" height="30"/>
-                                <state key="normal" title="tabOrHold"/>
+                                <state key="normal" title="tapOrHold"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-yb-bOf">
                                 <rect key="frame" x="481" y="510" width="39" height="30"/>
