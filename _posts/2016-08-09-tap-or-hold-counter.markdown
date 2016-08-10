@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: tap or hold counter.html
+permalink: tap-or-hold-counter.html
 title:  01. tap or hold counter
 date:   2016-08-09 21:50:54 +0800
 ---
