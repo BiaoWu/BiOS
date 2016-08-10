@@ -10,6 +10,8 @@ title: BiOS
 email: biaoliu_2007@163.com
 description: iOS Samples
 
+exclude: ['deploy_website.sh']
+
 baseurl: "/BiOS"
 url: "https://biaowu.github.com"
 
