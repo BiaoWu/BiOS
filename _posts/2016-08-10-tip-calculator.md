@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: tip-calculator .html
+permalink: tip-calculator.html
 title:  02. tip-calculator
 date:   2016-08-10 14:20:54 +0800
 ---

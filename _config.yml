@@ -10,8 +10,8 @@ title: BiOS
 email: biaoliu_2007@163.com
 description: iOS Samples
 
-baseurl: ""
-url: "https://biaowu.github.com/BiOS"
+baseurl: "/BiOS"
+url: "https://biaowu.github.com"
 
 github_username:  BiaoWu
 
