@@ -12,6 +12,8 @@ jekyll build
 # Checkout and track the gh-pages branch
 git checkout gh-pages
 
+git rm -rf .
+
 # Delete everything that isn't _site
 ls | grep -E -v '^_site$' | xargs rm -rf
 
