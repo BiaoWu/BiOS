@@ -11,11 +11,13 @@ import UIKit
 
 class MainModel {
     let tapOrHolderCounter = "01.TapOrHoldCounter"
+    let tipCalculator = "02.tip-calculator"
     
     private var data = [String]()
     
     init() {
         data.append(tapOrHolderCounter)
+        data.append(tipCalculator)
     }
     
     func size() -> Int {
@@ -30,6 +32,8 @@ class MainModel {
         switch name {
         case tapOrHolderCounter:
             return UIStoryboard.init(name: "TapOrHoldCounter", bundle: nil).instantiateInitialViewController()
+        case tipCalculator:
+            return UIStoryboard.init(name: "TipCalculator", bundle: nil).instantiateInitialViewController()
         default:
             return nil
         }

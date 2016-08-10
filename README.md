@@ -4,5 +4,12 @@
 
 ## Samples
 
-- [x] Tap Or Hold Counter  
+
+* 01	tap-or-hold-counter  
+- [x] swift
+- [x] oc
+
+* 02	tip-calculator  
+- [x] swift
+- [ ] oc
 
