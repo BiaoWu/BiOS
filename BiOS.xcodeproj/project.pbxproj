@@ -17,6 +17,9 @@
 		4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E40BD491D59B26E009731BF /* TapOrHoldCounter.storyboard */; };
 		4E40BD4C1D59B26E009731BF /* TapOrHoldCounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD4A1D59B26E009731BF /* TapOrHoldCounterVC.swift */; };
 		4E40BD501D59B71C009731BF /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD4F1D59B71C009731BF /* MainModel.swift */; };
+		4E4F74A91D5C27F500D7298A /* pass-data-to-other-views.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4F74A81D5C27F500D7298A /* pass-data-to-other-views.storyboard */; };
+		4E4F74AD1D5C287500D7298A /* PassDataToOtherViewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74AB1D5C287500D7298A /* PassDataToOtherViewsVC.swift */; };
+		4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74AC1D5C287500D7298A /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		4E40BD491D59B26E009731BF /* TapOrHoldCounter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TapOrHoldCounter.storyboard; path = 01.TabOrHoldCounter/TapOrHoldCounter.storyboard; sourceTree = "<group>"; };
 		4E40BD4A1D59B26E009731BF /* TapOrHoldCounterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapOrHoldCounterVC.swift; path = 01.TabOrHoldCounter/TapOrHoldCounterVC.swift; sourceTree = "<group>"; };
 		4E40BD4F1D59B71C009731BF /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		4E4F74A81D5C27F500D7298A /* pass-data-to-other-views.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "pass-data-to-other-views.storyboard"; path = "03.pass-data-to-other-views/pass-data-to-other-views.storyboard"; sourceTree = "<group>"; };
+		4E4F74AB1D5C287500D7298A /* PassDataToOtherViewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassDataToOtherViewsVC.swift; path = "03.pass-data-to-other-views/PassDataToOtherViewsVC.swift"; sourceTree = "<group>"; };
+		4E4F74AC1D5C287500D7298A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "03.pass-data-to-other-views/SecondViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E4F74AA1D5C27FB00D7298A /* 03.pass-data-to-other-views */,
 				4E3C3B511D5AAC2900E41F58 /* 02.tip-calculator */,
 				4E40BD481D59B19C009731BF /* 01.TapOrHoldCounter */,
 				4E40BD361D59AE36009731BF /* MainViewController.swift */,
@@ -93,6 +100,16 @@
 				4E40BD4A1D59B26E009731BF /* TapOrHoldCounterVC.swift */,
 			);
 			name = 01.TapOrHoldCounter;
+			sourceTree = "<group>";
+		};
+		4E4F74AA1D5C27FB00D7298A /* 03.pass-data-to-other-views */ = {
+			isa = PBXGroup;
+			children = (
+				4E4F74AB1D5C287500D7298A /* PassDataToOtherViewsVC.swift */,
+				4E4F74AC1D5C287500D7298A /* SecondViewController.swift */,
+				4E4F74A81D5C27F500D7298A /* pass-data-to-other-views.storyboard */,
+			);
+			name = "03.pass-data-to-other-views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4F74A91D5C27F500D7298A /* pass-data-to-other-views.storyboard in Resources */,
 				4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */,
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
@@ -173,6 +191,8 @@
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4E40BD4C1D59B26E009731BF /* TapOrHoldCounterVC.swift in Sources */,
 				4E40BD501D59B71C009731BF /* MainModel.swift in Sources */,
+				4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */,
+				4E4F74AD1D5C287500D7298A /* PassDataToOtherViewsVC.swift in Sources */,
 				4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

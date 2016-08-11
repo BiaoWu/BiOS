@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PassDataToOtherViewsVC" customModule="BiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input your data" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nbj-tX-jzz">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nbj-tX-jzz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="B6S-XQ-zgP"/>
+                            <constraint firstItem="Nbj-tX-jzz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pJo-wl-oLf"/>
+                            <constraint firstItem="Nbj-tX-jzz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uyj-UB-Hoh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="First" id="vYh-an-oE0">
+                        <barButtonItem key="rightBarButtonItem" title="Pass" id="Q6X-YW-8eX">
+                            <connections>
+                                <segue destination="H04-8L-AJw" kind="show" identifier="segue" id="ami-tX-HcN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="inputText" destination="Nbj-tX-jzz" id="caK-gn-Ytq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="378"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="Zwz-JR-7Tg">
+            <objects>
+                <viewController title="Second" id="H04-8L-AJw" customClass="SecondViewController" customModule="BiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LNe-JP-2Di"/>
+                        <viewControllerLayoutGuide type="bottom" id="aa7-gs-Bgc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qxu-ca-eHh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfN-cF-2ZR">
+                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yfN-cF-2ZR" firstAttribute="top" secondItem="LNe-JP-2Di" secondAttribute="bottom" constant="8" symbolic="YES" id="KQl-9m-8cM"/>
+                            <constraint firstItem="aa7-gs-Bgc" firstAttribute="top" secondItem="yfN-cF-2ZR" secondAttribute="bottom" constant="507" id="NYb-oz-Kvn"/>
+                            <constraint firstItem="yfN-cF-2ZR" firstAttribute="leading" secondItem="qxu-ca-eHh" secondAttribute="leadingMargin" id="e0b-ZH-79z"/>
+                            <constraint firstItem="yfN-cF-2ZR" firstAttribute="trailing" secondItem="qxu-ca-eHh" secondAttribute="trailingMargin" id="kP1-9Y-USB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="yfN-cF-2ZR" id="QKG-Ll-C9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jNo-2E-MEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="378"/>
+        </scene>
+    </scenes>
+</document>
