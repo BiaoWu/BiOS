@@ -14,6 +14,7 @@ class MainModel {
     let tipCalculator = "02.tip-calculator"
     let passDataToOtherViews = "03.pass-data-to-other-views"
     let swipeToDismissKeyboard = "04.swipe-to-dismiss-keyboard"
+    let addPhotoFromCameraRoll = "05.add-photo-from-camera-roll"
     
     private var data = [String]()
     
@@ -22,6 +23,7 @@ class MainModel {
         data.append(tipCalculator)
         data.append(passDataToOtherViews)
         data.append(swipeToDismissKeyboard)
+        data.append(addPhotoFromCameraRoll)
     }
     
     func size() -> Int {
@@ -42,6 +44,8 @@ class MainModel {
             return UIStoryboard.init(name: "pass-data-to-other-views", bundle: nil).instantiateInitialViewController()
         case swipeToDismissKeyboard:
             return UIStoryboard.init(name: "swipe-to-dismiss-keyboard", bundle: nil).instantiateInitialViewController()
+        case addPhotoFromCameraRoll:
+            return UIStoryboard.init(name: "add-photo-from-camera-roll", bundle: nil).instantiateInitialViewController()
         default:
             return nil
         }
