@@ -22,6 +22,8 @@
 		4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74AC1D5C287500D7298A /* SecondViewController.swift */; };
 		4E4F74B01D5C2AB400D7298A /* swipe-to-dismiss-keyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4F74AF1D5C2AB400D7298A /* swipe-to-dismiss-keyboard.storyboard */; };
 		4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */; };
+		4E4F74B51D5C36E900D7298A /* add-photo-from-camera-roll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */; };
+		4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		4E4F74AC1D5C287500D7298A /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "03.pass-data-to-other-views/SecondViewController.swift"; sourceTree = "<group>"; };
 		4E4F74AF1D5C2AB400D7298A /* swipe-to-dismiss-keyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "swipe-to-dismiss-keyboard.storyboard"; path = "04.swipe-to-dismiss-keyboard/swipe-to-dismiss-keyboard.storyboard"; sourceTree = "<group>"; };
 		4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeToDismissKeyboardVC.swift; path = "04.swipe-to-dismiss-keyboard/SwipeToDismissKeyboardVC.swift"; sourceTree = "<group>"; };
+		4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "add-photo-from-camera-roll.storyboard"; path = "05.add-photo-from-camera-roll/add-photo-from-camera-roll.storyboard"; sourceTree = "<group>"; };
+		4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPhotoFromCameraRollVC.swift; path = "05.add-photo-from-camera-roll/AddPhotoFromCameraRollVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E4F74B61D5C36ED00D7298A /* 05.add-photo-from-camera-roll */,
 				4E4F74B11D5C2AB800D7298A /* 04.swipe-to-dismiss-keyboard */,
 				4E4F74AA1D5C27FB00D7298A /* 03.pass-data-to-other-views */,
 				4E3C3B511D5AAC2900E41F58 /* 02.tip-calculator */,
@@ -124,6 +129,15 @@
 				4E4F74AF1D5C2AB400D7298A /* swipe-to-dismiss-keyboard.storyboard */,
 			);
 			name = "04.swipe-to-dismiss-keyboard";
+			sourceTree = "<group>";
+		};
+		4E4F74B61D5C36ED00D7298A /* 05.add-photo-from-camera-roll */ = {
+			isa = PBXGroup;
+			children = (
+				4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */,
+				4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */,
+			);
+			name = "05.add-photo-from-camera-roll";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4F74B01D5C2AB400D7298A /* swipe-to-dismiss-keyboard.storyboard in Resources */,
+				4E4F74B51D5C36E900D7298A /* add-photo-from-camera-roll.storyboard in Resources */,
 				4E4F74A91D5C27F500D7298A /* pass-data-to-other-views.storyboard in Resources */,
 				4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */,
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
@@ -205,6 +220,7 @@
 				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */,
+				4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */,
 				4E40BD4C1D59B26E009731BF /* TapOrHoldCounterVC.swift in Sources */,
 				4E40BD501D59B71C009731BF /* MainModel.swift in Sources */,
 				4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */,
