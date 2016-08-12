@@ -15,6 +15,7 @@ class MainModel {
     let passDataToOtherViews = "03.pass-data-to-other-views"
     let swipeToDismissKeyboard = "04.swipe-to-dismiss-keyboard"
     let addPhotoFromCameraRoll = "05.add-photo-from-camera-roll"
+    let pullToRefresh = "06.pull-to-refresh"
     
     private var data = [String]()
     
@@ -24,6 +25,7 @@ class MainModel {
         data.append(passDataToOtherViews)
         data.append(swipeToDismissKeyboard)
         data.append(addPhotoFromCameraRoll)
+        data.append(pullToRefresh)
     }
     
     func size() -> Int {
@@ -46,6 +48,8 @@ class MainModel {
             return UIStoryboard.init(name: "swipe-to-dismiss-keyboard", bundle: nil).instantiateInitialViewController()
         case addPhotoFromCameraRoll:
             return UIStoryboard.init(name: "add-photo-from-camera-roll", bundle: nil).instantiateInitialViewController()
+        case pullToRefresh:
+            return UIStoryboard.init(name: "pull-to-refresh", bundle: nil).instantiateInitialViewController()
         default:
             return nil
         }
