@@ -4,6 +4,7 @@
 
 ## Samples
 
+> more detail see [website](https://biaowu.github.io/BiOS)
 
 * [01.tap-or-hold-counter](https://biaowu.github.io/BiOS/tap-or-hold-counter.html)
 - [x] swift
@@ -22,6 +23,10 @@
 - [ ] oc
 
 * 05.add-photo-from-camera-roll
+- [x] swift
+- [ ] oc
+
+* 06.pull-to-refresh
 - [x] swift
 - [ ] oc
 
