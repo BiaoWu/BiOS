@@ -10,48 +10,36 @@ import Foundation
 import UIKit
 
 class MainModel {
-    let tapOrHolderCounter = "01.TapOrHoldCounter"
-    let tipCalculator = "02.tip-calculator"
-    let passDataToOtherViews = "03.pass-data-to-other-views"
-    let swipeToDismissKeyboard = "04.swipe-to-dismiss-keyboard"
-    let addPhotoFromCameraRoll = "05.add-photo-from-camera-roll"
-    let pullToRefresh = "06.pull-to-refresh"
+    class Entry {
+        var title: String!
+        var storyBoardName: String!
+        
+        init(title: String,storyBoardName: String){
+            self.title = title
+            self.storyBoardName = storyBoardName
+        }
+    }
     
-    private var data = [String]()
+    private var data = [Entry]()
     
     init() {
-        data.append(tapOrHolderCounter)
-        data.append(tipCalculator)
-        data.append(passDataToOtherViews)
-        data.append(swipeToDismissKeyboard)
-        data.append(addPhotoFromCameraRoll)
-        data.append(pullToRefresh)
+        data.append(Entry(title:  "01.TapOrHoldCounter", storyBoardName: "TapOrHoldCounter"))
+        data.append(Entry(title:  "02.tip-calculator", storyBoardName: "TipCalculator"))
+        data.append(Entry(title:  "03.pass-data-to-other-views", storyBoardName: "pass-data-to-other-views"))
+        data.append(Entry(title:  "04.swipe-to-dismiss-keyboard", storyBoardName: "swipe-to-dismiss-keyboard"))
+        data.append(Entry(title:  "05.add-photo-from-camera-roll", storyBoardName: "add-photo-from-camera-roll"))
+        data.append(Entry(title:  "06.pull-to-refresh", storyBoardName: "pull-to-refresh"))
     }
     
     func size() -> Int {
         return data.count
     }
     
-    func getItem(index: Int) -> String {
+    func getItem(index: Int) -> Entry {
         return data[index]
     }
     
-    func providerVc(name: String) -> UIViewController? {
-        switch name {
-        case tapOrHolderCounter:
-            return UIStoryboard.init(name: "TapOrHoldCounter", bundle: nil).instantiateInitialViewController()
-        case tipCalculator:
-            return UIStoryboard.init(name: "TipCalculator", bundle: nil).instantiateInitialViewController()
-        case passDataToOtherViews:
-            return UIStoryboard.init(name: "pass-data-to-other-views", bundle: nil).instantiateInitialViewController()
-        case swipeToDismissKeyboard:
-            return UIStoryboard.init(name: "swipe-to-dismiss-keyboard", bundle: nil).instantiateInitialViewController()
-        case addPhotoFromCameraRoll:
-            return UIStoryboard.init(name: "add-photo-from-camera-roll", bundle: nil).instantiateInitialViewController()
-        case pullToRefresh:
-            return UIStoryboard.init(name: "pull-to-refresh", bundle: nil).instantiateInitialViewController()
-        default:
-            return nil
-        }
+    func providerVc(index: Int) -> UIViewController {
+        return UIStoryboard.init(name: getItem(index).storyBoardName, bundle: nil).instantiateInitialViewController()!
     }
 }

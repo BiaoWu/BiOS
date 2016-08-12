@@ -9,7 +9,7 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-
+    
     var model = MainModel()
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -19,13 +19,13 @@ class MainViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
         
-        cell.textLabel?.text = model.getItem(indexPath.row)
+        cell.textLabel?.text = model.getItem(indexPath.row).title
         
         return cell
     }
-
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        showViewController(model.providerVc(model.getItem(indexPath.row))!, sender: nil)
+        showViewController(model.providerVc(indexPath.row), sender: nil)
     }
 }
 
