@@ -29,6 +29,7 @@ class MainModel {
         data.append(Entry(title:  "04.swipe-to-dismiss-keyboard", storyBoardName: "swipe-to-dismiss-keyboard"))
         data.append(Entry(title:  "05.add-photo-from-camera-roll", storyBoardName: "add-photo-from-camera-roll"))
         data.append(Entry(title:  "06.pull-to-refresh", storyBoardName: "pull-to-refresh"))
+        data.append(Entry(title:  "07.delete-and-rearrange", storyBoardName: "delete-and-rearrange"))
     }
     
     func size() -> Int {
