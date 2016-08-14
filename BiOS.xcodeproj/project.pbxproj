@@ -28,6 +28,8 @@
 		4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */; };
 		4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */; };
 		4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBB9B631D5EA06300468DB1 /* DeleteAndRearrangeVC.swift */; };
+		4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */; };
+		4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullToRefreshVC.swift; path = "06.pull-to-refresh/PullToRefreshVC.swift"; sourceTree = "<group>"; };
 		4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "delete-and-rearrange.storyboard"; path = "07.delete-and-rearrange/delete-and-rearrange.storyboard"; sourceTree = "<group>"; };
 		4EBB9B631D5EA06300468DB1 /* DeleteAndRearrangeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeleteAndRearrangeVC.swift; path = "07.delete-and-rearrange/DeleteAndRearrangeVC.swift"; sourceTree = "<group>"; };
+		4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "sticky-section-headers.storyboard"; path = "08.sticky-section-headers/sticky-section-headers.storyboard"; sourceTree = "<group>"; };
+		4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickySectionHeadersVC.swift; path = "08.sticky-section-headers/StickySectionHeadersVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4EDB8C891D5FECB500CC8C68 /* 08.sticky-section-headers */,
 				4EBB9B621D5EA01000468DB1 /* 07.delete-and-rearrange */,
 				4E6936AE1D5D742A001DF708 /* 06.pull-to-refresh */,
 				4E4F74B61D5C36ED00D7298A /* 05.add-photo-from-camera-roll */,
@@ -168,6 +173,15 @@
 			name = "07.delete-and-rearrange";
 			sourceTree = "<group>";
 		};
+		4EDB8C891D5FECB500CC8C68 /* 08.sticky-section-headers */ = {
+			isa = PBXGroup;
+			children = (
+				4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */,
+				4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */,
+			);
+			name = "08.sticky-section-headers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +251,7 @@
 				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
 				4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */,
 				4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */,
+				4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +265,7 @@
 				4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */,
 				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
 				4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */,
+				4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */,
 				4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */,
