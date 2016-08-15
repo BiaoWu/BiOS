@@ -51,6 +51,10 @@ class StickySectionHeadersVC: UITableViewController {
         return String(char)
     }
     
+    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+        return sortedKeys
+    }
+    
     private func getSectionKey(section: Int) -> String {
         return sortedKeys[sortedKeys.startIndex.advancedBy(section)]
     }
