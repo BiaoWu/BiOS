@@ -20,8 +20,31 @@ class DeleteAndRearrangeVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Add New Button
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(showAddView))
         //编辑按钮
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItems = [addButton, self.editButtonItem()]
+    }
+    
+    // Alert
+    func showAddView() {
+        let alert =  UIAlertController(title: "Add New", message: "please enter a new name", preferredStyle: .Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {(_) -> Void
+            in
+            
+            let textField = alert.textFields!.first!
+            if textField.text != "" {
+                self.data.append(textField.text!)
+                self.tableView.reloadData()
+            }
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+        
+        alert.addTextFieldWithConfigurationHandler(nil)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     // MARK: - UITableViewDataSource
