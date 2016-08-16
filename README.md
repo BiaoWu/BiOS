@@ -12,4 +12,7 @@
 * 04.swipe-to-dismiss-keyboard
 * 05.add-photo-from-camera-roll
 * 06.pull-to-refresh
+* 07.delete-and-rearrange
+* 08.sticky-section-headers
+* 09.contacts-app
 
