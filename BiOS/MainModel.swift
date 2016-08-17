@@ -31,7 +31,8 @@ class MainModel {
         data.append(Entry(title:  "06.pull-to-refresh", storyBoardName: "pull-to-refresh"))
         data.append(Entry(title:  "07.delete-and-rearrange", storyBoardName: "delete-and-rearrange"))
         data.append(Entry(title:  "08.sticky-section-headers", storyBoardName: "sticky-section-headers"))
-        data.append(Entry(title:  "10.contacts-app", storyBoardName: "contacts-app"))
+        data.append(Entry(title:  "09.contacts-app", storyBoardName: "contacts-app"))
+        data.append(Entry(title:  "10.timeline", storyBoardName: "timeline"))
     }
     
     func size() -> Int {
