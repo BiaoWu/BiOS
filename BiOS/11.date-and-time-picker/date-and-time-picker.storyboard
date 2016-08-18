@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hym-z8-Z2M">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date And Time PickerVC-->
+        <scene sceneID="2w5-Q8-uka">
+            <objects>
+                <viewController id="hym-z8-Z2M" customClass="DateAndTimePickerVC" customModule="BiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ByD-OL-pzy"/>
+                        <viewControllerLayoutGuide type="bottom" id="wsQ-zu-dE4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z5B-Ic-R3h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udD-xx-vzy">
+                                <rect key="frame" x="534" y="122" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="z5q-p1-9HB"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="hym-z8-Z2M" eventType="touchUpInside" id="45j-Jk-1Es"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xTf-vr-0en">
+                                <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="493199007.28741902">
+                                    <!--2016-08-18 07:43:27 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date And Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxF-Oj-tDE">
+                                <rect key="frame" x="20" y="20" width="560" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="eZe-We-ahA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NFu-bz-oNl">
+                                <rect key="frame" x="0.0" y="160" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="493198729.28555101">
+                                    <!--2016-08-18 07:38:49 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RxF-Oj-tDE" firstAttribute="trailing" secondItem="udD-xx-vzy" secondAttribute="trailing" id="33V-ge-5bK"/>
+                            <constraint firstItem="xTf-vr-0en" firstAttribute="bottom" secondItem="wsQ-zu-dE4" secondAttribute="top" id="3FU-pD-lVi"/>
+                            <constraint firstAttribute="trailing" secondItem="NFu-bz-oNl" secondAttribute="trailing" id="C0k-D3-Fra"/>
+                            <constraint firstItem="udD-xx-vzy" firstAttribute="trailing" secondItem="z5B-Ic-R3h" secondAttribute="trailingMargin" id="DAr-Ul-L2c"/>
+                            <constraint firstItem="NFu-bz-oNl" firstAttribute="centerX" secondItem="RxF-Oj-tDE" secondAttribute="centerX" id="Uen-Ea-TuD"/>
+                            <constraint firstItem="RxF-Oj-tDE" firstAttribute="top" secondItem="ByD-OL-pzy" secondAttribute="bottom" id="VZL-v8-yDj"/>
+                            <constraint firstItem="NFu-bz-oNl" firstAttribute="trailing" secondItem="xTf-vr-0en" secondAttribute="trailing" id="eYB-RK-oz0"/>
+                            <constraint firstItem="NFu-bz-oNl" firstAttribute="leading" secondItem="z5B-Ic-R3h" secondAttribute="leading" id="fmD-mH-P3i"/>
+                            <constraint firstItem="xTf-vr-0en" firstAttribute="top" secondItem="NFu-bz-oNl" secondAttribute="bottom" constant="8" symbolic="YES" id="hgz-4u-ar5"/>
+                            <constraint firstItem="NFu-bz-oNl" firstAttribute="leading" secondItem="xTf-vr-0en" secondAttribute="leading" id="lue-zE-g6p"/>
+                            <constraint firstItem="NFu-bz-oNl" firstAttribute="top" secondItem="udD-xx-vzy" secondAttribute="bottom" constant="8" symbolic="YES" id="xcF-dS-DdF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="NFu-bz-oNl" id="LSW-58-VwP"/>
+                        <outlet property="dateTimeLabel" destination="RxF-Oj-tDE" id="W2b-W6-ZEX"/>
+                        <outlet property="timePicker" destination="xTf-vr-0en" id="q5y-I1-hLo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eqv-db-aMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="446"/>
+        </scene>
+    </scenes>
+</document>
