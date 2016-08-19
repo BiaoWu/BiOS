@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1G-8A-1yY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--PhotosVC-->
+        <scene sceneID="4qu-Bi-Ib2">
+            <objects>
+                <collectionViewController id="H1G-8A-1yY" customClass="PhotosVC" customModule="BiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="NXT-ab-Omb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qs2-hQ-D19">
+                            <size key="itemSize" width="150" height="150"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="CXl-rV-rqQ" customClass="PhotoItemCell" customModule="BiOS" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-oq-sj6">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="rCh-oq-sj6" firstAttribute="bottom" secondItem="CXl-rV-rqQ" secondAttribute="bottomMargin" constant="8" id="6YO-2Z-qPf"/>
+                                    <constraint firstItem="rCh-oq-sj6" firstAttribute="trailing" secondItem="CXl-rV-rqQ" secondAttribute="trailingMargin" constant="8" id="aqj-TW-ycl"/>
+                                    <constraint firstItem="rCh-oq-sj6" firstAttribute="top" secondItem="CXl-rV-rqQ" secondAttribute="topMargin" constant="-8" id="gGL-fv-7Nk"/>
+                                    <constraint firstItem="rCh-oq-sj6" firstAttribute="leading" secondItem="CXl-rV-rqQ" secondAttribute="leadingMargin" constant="-8" id="hPK-5s-pUG"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="photoImage" destination="rCh-oq-sj6" id="7Lj-fk-RUR"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="H1G-8A-1yY" id="4ST-MC-g4T"/>
+                            <outlet property="delegate" destination="H1G-8A-1yY" id="hJT-FG-PYc"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHW-cr-NWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="401"/>
+        </scene>
+    </scenes>
+</document>

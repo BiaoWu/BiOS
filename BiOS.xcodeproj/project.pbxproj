@@ -43,6 +43,11 @@
 		4ED129F11D62F7E400806377 /* ExUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED129F01D62F7E400806377 /* ExUIImageView.swift */; };
 		4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */; };
 		4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */; };
+		4EF20F851D66D37F00BACC73 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F841D66D37F00BACC73 /* PhotosVC.swift */; };
+		4EF20F881D66D39400BACC73 /* photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF20F871D66D39400BACC73 /* photos.storyboard */; };
+		4EF20F8A1D66D48100BACC73 /* PhotoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */; };
+		4EF20F8C1D66E41900BACC73 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */; };
+		4EF20F8E1D66E46600BACC73 /* photo_items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF20F8D1D66E46600BACC73 /* photo_items.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		4ED129F01D62F7E400806377 /* ExUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIImageView.swift; sourceTree = "<group>"; };
 		4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "sticky-section-headers.storyboard"; path = "08.sticky-section-headers/sticky-section-headers.storyboard"; sourceTree = "<group>"; };
 		4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickySectionHeadersVC.swift; path = "08.sticky-section-headers/StickySectionHeadersVC.swift"; sourceTree = "<group>"; };
+		4EF20F841D66D37F00BACC73 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosVC.swift; path = 11.photos/PhotosVC.swift; sourceTree = "<group>"; };
+		4EF20F871D66D39400BACC73 /* photos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = photos.storyboard; path = 11.photos/photos.storyboard; sourceTree = "<group>"; };
+		4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItemCell.swift; path = 11.photos/PhotoItemCell.swift; sourceTree = "<group>"; };
+		4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItem.swift; path = 11.photos/PhotoItem.swift; sourceTree = "<group>"; };
+		4EF20F8D1D66E46600BACC73 /* photo_items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photo_items.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4EF20F861D66D38500BACC73 /* 11.photos */,
 				4EC7635C1D6430E50071A4E9 /* 10.timeline */,
 				4ED129E51D62D61500806377 /* 09.contacts-app */,
 				4EDB8C891D5FECB500CC8C68 /* 08.sticky-section-headers */,
@@ -261,6 +272,18 @@
 			name = "08.sticky-section-headers";
 			sourceTree = "<group>";
 		};
+		4EF20F861D66D38500BACC73 /* 11.photos */ = {
+			isa = PBXGroup;
+			children = (
+				4EF20F871D66D39400BACC73 /* photos.storyboard */,
+				4EF20F841D66D37F00BACC73 /* PhotosVC.swift */,
+				4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */,
+				4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */,
+				4EF20F8D1D66E46600BACC73 /* photo_items.plist */,
+			);
+			name = 11.photos;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,9 +352,11 @@
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
 				4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */,
 				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
+				4EF20F881D66D39400BACC73 /* photos.storyboard in Resources */,
 				4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */,
 				4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */,
 				4EC7635B1D6430DD0071A4E9 /* timeline.storyboard in Resources */,
+				4EF20F8E1D66E46600BACC73 /* photo_items.plist in Resources */,
 				4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +375,7 @@
 				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
 				4EC7635E1D64324B0071A4E9 /* TimelineVC.swift in Sources */,
 				4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */,
+				4EF20F851D66D37F00BACC73 /* PhotosVC.swift in Sources */,
 				4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4ECC18BA1D6345C1007AAC4A /* ContactsModel.swift in Sources */,
@@ -359,7 +385,9 @@
 				4E40BD4C1D59B26E009731BF /* TapOrHoldCounterVC.swift in Sources */,
 				4EC763661D64434B0071A4E9 /* TimelineEntry.swift in Sources */,
 				4ECC18B41D634574007AAC4A /* UserInfoVC.swift in Sources */,
+				4EF20F8C1D66E41900BACC73 /* PhotoItem.swift in Sources */,
 				4E40BD501D59B71C009731BF /* MainModel.swift in Sources */,
+				4EF20F8A1D66D48100BACC73 /* PhotoItemCell.swift in Sources */,
 				4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */,
 				4ECC18B91D6345C1007AAC4A /* ContactsItemCell.swift in Sources */,
 				4E4F74AD1D5C287500D7298A /* PassDataToOtherViewsVC.swift in Sources */,
