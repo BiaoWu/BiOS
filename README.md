@@ -15,4 +15,7 @@
 * 07.delete-and-rearrange
 * 08.sticky-section-headers
 * 09.contacts-app
+* 10.timeline
+* 11.date-and-time-picker
+* 12.photos
 
