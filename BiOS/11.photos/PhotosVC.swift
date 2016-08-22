@@ -49,10 +49,8 @@ class PhotosVC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let vc = UIAlertController(title: "didSelectItemAtIndexPath", message: "indexPath: \(indexPath.row)", preferredStyle: .Alert)
-        
-        vc.addAction(UIAlertAction.init(title: "Dismiss", style: .Destructive, handler: nil))
-        
-        presentViewController(vc, animated: true, completion: nil)
+        let vc = PhotoDetailVC()
+        vc.photoItem = data[indexPath.row]
+        showViewController(vc, sender: nil)
     }
 }

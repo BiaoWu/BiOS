@@ -10,8 +10,11 @@ import Foundation
 
 class PhotoItem {
     var itemImage: String?
+    var content: String?
+    
     
     init(_ dic: Dictionary<String, String>) {
         self.itemImage = dic["itemImage"]
+        self.content = dic["content"]
     }
 }
