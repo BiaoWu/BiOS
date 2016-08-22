@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0094F61D6AA8E40044D1AB /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0094F51D6AA8E40044D1AB /* PhotoDetailView.swift */; };
-		4E0094F81D6AB1CF0044D1AB /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0094F71D6AB1CF0044D1AB /* PhotoDetailVC.swift */; };
-		4E0094FA1D6AC7460044D1AB /* photo_items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E0094F91D6AC7460044D1AB /* photo_items.plist */; };
 		4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C3B521D5AACB500E41F58 /* TipCalculator.storyboard */; };
 		4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C3B541D5AAD2C00E41F58 /* TipCalculatorVC.swift */; };
 		4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD341D59AE36009731BF /* AppDelegate.swift */; };
@@ -38,6 +35,13 @@
 		4EC763601D64327A0071A4E9 /* TimelineItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7635F1D64327A0071A4E9 /* TimelineItemCell.swift */; };
 		4EC763641D64431F0071A4E9 /* AddNewEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC763631D64431F0071A4E9 /* AddNewEntryVC.swift */; };
 		4EC763661D64434B0071A4E9 /* TimelineEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC763651D64434B0071A4E9 /* TimelineEntry.swift */; };
+		4EC8EE3C1D6AD0540036ACC5 /* photo_items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8EE351D6AD0540036ACC5 /* photo_items.plist */; };
+		4EC8EE3D1D6AD0540036ACC5 /* PhotoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8EE361D6AD0540036ACC5 /* PhotoDetailVC.swift */; };
+		4EC8EE3E1D6AD0540036ACC5 /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8EE371D6AD0540036ACC5 /* PhotoDetailView.swift */; };
+		4EC8EE3F1D6AD0540036ACC5 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8EE381D6AD0540036ACC5 /* PhotoItem.swift */; };
+		4EC8EE401D6AD0540036ACC5 /* photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC8EE391D6AD0540036ACC5 /* photos.storyboard */; };
+		4EC8EE411D6AD0540036ACC5 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8EE3A1D6AD0540036ACC5 /* PhotosVC.swift */; };
+		4EC8EE421D6AD0540036ACC5 /* PhotoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8EE3B1D6AD0540036ACC5 /* PhotoItemCell.swift */; };
 		4ECC18B21D634574007AAC4A /* contacts-app.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ECC18AF1D634574007AAC4A /* contacts-app.storyboard */; };
 		4ECC18B31D634574007AAC4A /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC18B01D634574007AAC4A /* ContactsVC.swift */; };
 		4ECC18B41D634574007AAC4A /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC18B11D634574007AAC4A /* UserInfoVC.swift */; };
@@ -48,16 +52,9 @@
 		4ED129F11D62F7E400806377 /* ExUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED129F01D62F7E400806377 /* ExUIImageView.swift */; };
 		4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */; };
 		4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */; };
-		4EF20F851D66D37F00BACC73 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F841D66D37F00BACC73 /* PhotosVC.swift */; };
-		4EF20F881D66D39400BACC73 /* photos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF20F871D66D39400BACC73 /* photos.storyboard */; };
-		4EF20F8A1D66D48100BACC73 /* PhotoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */; };
-		4EF20F8C1D66E41900BACC73 /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E0094F51D6AA8E40044D1AB /* PhotoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailView.swift; path = 11.photos/PhotoDetailView.swift; sourceTree = "<group>"; };
-		4E0094F71D6AB1CF0044D1AB /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailVC.swift; path = 11.photos/PhotoDetailVC.swift; sourceTree = "<group>"; };
-		4E0094F91D6AC7460044D1AB /* photo_items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = photo_items.plist; path = 11.photos/photo_items.plist; sourceTree = "<group>"; };
 		4E3C3B521D5AACB500E41F58 /* TipCalculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TipCalculator.storyboard; path = "02.tip-calculator/TipCalculator.storyboard"; sourceTree = "<group>"; };
 		4E3C3B541D5AAD2C00E41F58 /* TipCalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipCalculatorVC.swift; path = "02.tip-calculator/TipCalculatorVC.swift"; sourceTree = "<group>"; };
 		4E40BD311D59AE36009731BF /* BiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +85,13 @@
 		4EC7635F1D64327A0071A4E9 /* TimelineItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineItemCell.swift; path = 10.timeline/TimelineItemCell.swift; sourceTree = "<group>"; };
 		4EC763631D64431F0071A4E9 /* AddNewEntryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddNewEntryVC.swift; path = 10.timeline/AddNewEntryVC.swift; sourceTree = "<group>"; };
 		4EC763651D64434B0071A4E9 /* TimelineEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineEntry.swift; path = 10.timeline/TimelineEntry.swift; sourceTree = "<group>"; };
+		4EC8EE351D6AD0540036ACC5 /* photo_items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = photo_items.plist; path = 12.photos/photo_items.plist; sourceTree = "<group>"; };
+		4EC8EE361D6AD0540036ACC5 /* PhotoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailVC.swift; path = 12.photos/PhotoDetailVC.swift; sourceTree = "<group>"; };
+		4EC8EE371D6AD0540036ACC5 /* PhotoDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoDetailView.swift; path = 12.photos/PhotoDetailView.swift; sourceTree = "<group>"; };
+		4EC8EE381D6AD0540036ACC5 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItem.swift; path = 12.photos/PhotoItem.swift; sourceTree = "<group>"; };
+		4EC8EE391D6AD0540036ACC5 /* photos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = photos.storyboard; path = 12.photos/photos.storyboard; sourceTree = "<group>"; };
+		4EC8EE3A1D6AD0540036ACC5 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosVC.swift; path = 12.photos/PhotosVC.swift; sourceTree = "<group>"; };
+		4EC8EE3B1D6AD0540036ACC5 /* PhotoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItemCell.swift; path = 12.photos/PhotoItemCell.swift; sourceTree = "<group>"; };
 		4ECC18AF1D634574007AAC4A /* contacts-app.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "contacts-app.storyboard"; path = "09.contacts-app/contacts-app.storyboard"; sourceTree = "<group>"; };
 		4ECC18B01D634574007AAC4A /* ContactsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsVC.swift; path = "09.contacts-app/ContactsVC.swift"; sourceTree = "<group>"; };
 		4ECC18B11D634574007AAC4A /* UserInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfoVC.swift; path = "09.contacts-app/UserInfoVC.swift"; sourceTree = "<group>"; };
@@ -98,10 +102,6 @@
 		4ED129F01D62F7E400806377 /* ExUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIImageView.swift; sourceTree = "<group>"; };
 		4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "sticky-section-headers.storyboard"; path = "08.sticky-section-headers/sticky-section-headers.storyboard"; sourceTree = "<group>"; };
 		4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickySectionHeadersVC.swift; path = "08.sticky-section-headers/StickySectionHeadersVC.swift"; sourceTree = "<group>"; };
-		4EF20F841D66D37F00BACC73 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosVC.swift; path = 11.photos/PhotosVC.swift; sourceTree = "<group>"; };
-		4EF20F871D66D39400BACC73 /* photos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = photos.storyboard; path = 11.photos/photos.storyboard; sourceTree = "<group>"; };
-		4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItemCell.swift; path = 11.photos/PhotoItemCell.swift; sourceTree = "<group>"; };
-		4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoItem.swift; path = 11.photos/PhotoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,13 +293,13 @@
 		4EF20F861D66D38500BACC73 /* 12.photos */ = {
 			isa = PBXGroup;
 			children = (
-				4E0094F91D6AC7460044D1AB /* photo_items.plist */,
-				4EF20F871D66D39400BACC73 /* photos.storyboard */,
-				4EF20F841D66D37F00BACC73 /* PhotosVC.swift */,
-				4EF20F891D66D48100BACC73 /* PhotoItemCell.swift */,
-				4EF20F8B1D66E41900BACC73 /* PhotoItem.swift */,
-				4E0094F51D6AA8E40044D1AB /* PhotoDetailView.swift */,
-				4E0094F71D6AB1CF0044D1AB /* PhotoDetailVC.swift */,
+				4EC8EE351D6AD0540036ACC5 /* photo_items.plist */,
+				4EC8EE361D6AD0540036ACC5 /* PhotoDetailVC.swift */,
+				4EC8EE371D6AD0540036ACC5 /* PhotoDetailView.swift */,
+				4EC8EE381D6AD0540036ACC5 /* PhotoItem.swift */,
+				4EC8EE391D6AD0540036ACC5 /* photos.storyboard */,
+				4EC8EE3A1D6AD0540036ACC5 /* PhotosVC.swift */,
+				4EC8EE3B1D6AD0540036ACC5 /* PhotoItemCell.swift */,
 			);
 			name = 12.photos;
 			sourceTree = "<group>";
@@ -368,16 +368,16 @@
 				4E4F74A91D5C27F500D7298A /* pass-data-to-other-views.storyboard in Resources */,
 				4ECC18B21D634574007AAC4A /* contacts-app.storyboard in Resources */,
 				4E40BD3F1D59AE36009731BF /* LaunchScreen.storyboard in Resources */,
+				4EC8EE401D6AD0540036ACC5 /* photos.storyboard in Resources */,
 				4EBCE7EA1D659D4500E88F4B /* date-and-time-picker.storyboard in Resources */,
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
 				4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */,
 				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
-				4EF20F881D66D39400BACC73 /* photos.storyboard in Resources */,
 				4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */,
 				4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */,
 				4EC7635B1D6430DD0071A4E9 /* timeline.storyboard in Resources */,
-				4E0094FA1D6AC7460044D1AB /* photo_items.plist in Resources */,
+				4EC8EE3C1D6AD0540036ACC5 /* photo_items.plist in Resources */,
 				4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +389,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0094F81D6AB1CF0044D1AB /* PhotoDetailVC.swift in Sources */,
 				4ECC18B81D6345C1007AAC4A /* AddNewUserVC.swift in Sources */,
 				4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */,
 				4EC763601D64327A0071A4E9 /* TimelineItemCell.swift in Sources */,
@@ -397,8 +396,7 @@
 				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
 				4EC7635E1D64324B0071A4E9 /* TimelineVC.swift in Sources */,
 				4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */,
-				4EF20F851D66D37F00BACC73 /* PhotosVC.swift in Sources */,
-				4E0094F61D6AA8E40044D1AB /* PhotoDetailView.swift in Sources */,
+				4EC8EE3D1D6AD0540036ACC5 /* PhotoDetailVC.swift in Sources */,
 				4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4ECC18BA1D6345C1007AAC4A /* ContactsModel.swift in Sources */,
@@ -408,16 +406,18 @@
 				4E40BD4C1D59B26E009731BF /* TapOrHoldCounterVC.swift in Sources */,
 				4EC763661D64434B0071A4E9 /* TimelineEntry.swift in Sources */,
 				4ECC18B41D634574007AAC4A /* UserInfoVC.swift in Sources */,
-				4EF20F8C1D66E41900BACC73 /* PhotoItem.swift in Sources */,
 				4E40BD501D59B71C009731BF /* MainModel.swift in Sources */,
-				4EF20F8A1D66D48100BACC73 /* PhotoItemCell.swift in Sources */,
+				4EC8EE3E1D6AD0540036ACC5 /* PhotoDetailView.swift in Sources */,
 				4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */,
 				4ECC18B91D6345C1007AAC4A /* ContactsItemCell.swift in Sources */,
 				4EBCE7ED1D659DCF00E88F4B /* DateAndTimePickerVC.swift in Sources */,
 				4E4F74AD1D5C287500D7298A /* PassDataToOtherViewsVC.swift in Sources */,
+				4EC8EE421D6AD0540036ACC5 /* PhotoItemCell.swift in Sources */,
+				4EC8EE411D6AD0540036ACC5 /* PhotosVC.swift in Sources */,
 				4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */,
 				4ED129F11D62F7E400806377 /* ExUIImageView.swift in Sources */,
 				4ECC18B31D634574007AAC4A /* ContactsVC.swift in Sources */,
+				4EC8EE3F1D6AD0540036ACC5 /* PhotoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
