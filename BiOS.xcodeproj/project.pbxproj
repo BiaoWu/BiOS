@@ -290,7 +290,7 @@
 			name = "08.sticky-section-headers";
 			sourceTree = "<group>";
 		};
-		4EF20F861D66D38500BACC73 /* 11.photos */ = {
+		4EF20F861D66D38500BACC73 /* 12.photos */ = {
 			isa = PBXGroup;
 			children = (
 				4E0094F91D6AC7460044D1AB /* photo_items.plist */,
@@ -301,7 +301,7 @@
 				4E0094F51D6AA8E40044D1AB /* PhotoDetailView.swift */,
 				4E0094F71D6AB1CF0044D1AB /* PhotoDetailVC.swift */,
 			);
-			name = 11.photos;
+			name = 12.photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
