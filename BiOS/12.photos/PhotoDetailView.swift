@@ -31,7 +31,7 @@ class PhotoDetailView: UIScrollView {
         self.addSubview(contentLabel)
     }
     
-    override func layoutSubviews() {
+    override func willMoveToSuperview(newSuperview: UIView?) {
         if let item = photoItem {
             photoImage.image = UIImage(named: item.itemImage!)
         }
