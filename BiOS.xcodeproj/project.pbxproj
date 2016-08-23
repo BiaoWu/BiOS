@@ -24,6 +24,8 @@
 		4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */; };
 		4E4F74B51D5C36E900D7298A /* add-photo-from-camera-roll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */; };
 		4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */; };
+		4E6212BD1D6C27B7008B0FBB /* movie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6212BC1D6C27B7008B0FBB /* movie.storyboard */; };
+		4E6212C01D6C287B008B0FBB /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6212BF1D6C287B008B0FBB /* MovieVC.swift */; };
 		4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6936AC1D5D7425001DF708 /* pull-to-refresh.storyboard */; };
 		4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */; };
 		4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */; };
@@ -74,6 +76,8 @@
 		4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeToDismissKeyboardVC.swift; path = "04.swipe-to-dismiss-keyboard/SwipeToDismissKeyboardVC.swift"; sourceTree = "<group>"; };
 		4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "add-photo-from-camera-roll.storyboard"; path = "05.add-photo-from-camera-roll/add-photo-from-camera-roll.storyboard"; sourceTree = "<group>"; };
 		4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPhotoFromCameraRollVC.swift; path = "05.add-photo-from-camera-roll/AddPhotoFromCameraRollVC.swift"; sourceTree = "<group>"; };
+		4E6212BC1D6C27B7008B0FBB /* movie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = movie.storyboard; path = 13.movie/movie.storyboard; sourceTree = "<group>"; };
+		4E6212BF1D6C287B008B0FBB /* MovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieVC.swift; path = 13.movie/MovieVC.swift; sourceTree = "<group>"; };
 		4E6936AC1D5D7425001DF708 /* pull-to-refresh.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "pull-to-refresh.storyboard"; path = "06.pull-to-refresh/pull-to-refresh.storyboard"; sourceTree = "<group>"; };
 		4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullToRefreshVC.swift; path = "06.pull-to-refresh/PullToRefreshVC.swift"; sourceTree = "<group>"; };
 		4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "delete-and-rearrange.storyboard"; path = "07.delete-and-rearrange/delete-and-rearrange.storyboard"; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E6212BE1D6C27BC008B0FBB /* 13.movie */,
 				4EF20F861D66D38500BACC73 /* 12.photos */,
 				4EBCE7EB1D659D4900E88F4B /* 11.date-and-time-picker */,
 				4EC7635C1D6430E50071A4E9 /* 10.timeline */,
@@ -202,6 +207,15 @@
 				4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */,
 			);
 			name = "05.add-photo-from-camera-roll";
+			sourceTree = "<group>";
+		};
+		4E6212BE1D6C27BC008B0FBB /* 13.movie */ = {
+			isa = PBXGroup;
+			children = (
+				4E6212BC1D6C27B7008B0FBB /* movie.storyboard */,
+				4E6212BF1D6C287B008B0FBB /* MovieVC.swift */,
+			);
+			name = 13.movie;
 			sourceTree = "<group>";
 		};
 		4E6936AE1D5D742A001DF708 /* 06.pull-to-refresh */ = {
@@ -373,6 +387,7 @@
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
 				4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */,
+				4E6212BD1D6C27B7008B0FBB /* movie.storyboard in Resources */,
 				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
 				4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */,
 				4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */,
@@ -398,6 +413,7 @@
 				4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */,
 				4EC8EE3D1D6AD0540036ACC5 /* PhotoDetailVC.swift in Sources */,
 				4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */,
+				4E6212C01D6C287B008B0FBB /* MovieVC.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
 				4ECC18BA1D6345C1007AAC4A /* ContactsModel.swift in Sources */,
 				4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */,
