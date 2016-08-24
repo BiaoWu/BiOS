@@ -31,16 +31,21 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Movies"
         searchText = ""
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(beginSearch))
         
         searchVC = UISearchController(searchResultsController: nil)
         searchVC.searchResultsUpdater = self
         searchVC.dimsBackgroundDuringPresentation = false
         
         searchVC.delegate = self
-        
+    }
+    
+    func beginSearch() {
         self.tableView.tableHeaderView = searchVC.searchBar
-        searchVC.searchBar.sizeToFit()
+        searchVC.searchBar.becomeFirstResponder()
     }
     
     func reload(text: String) {
@@ -51,6 +56,12 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
             data = (movies as NSArray).filteredArrayUsingPredicate(searchPredicate) as! [String]
         }
         self.tableView.reloadData()
+    }
+    
+    // MARK: - UISearchControllerDelegate
+    
+    func willDismissSearchController(searchController: UISearchController) {
+        self.tableView.tableHeaderView = nil
     }
     
     // MARK: - UISearchResultsUpdating
