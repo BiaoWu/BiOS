@@ -18,6 +18,12 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     
     var data: [String]!
     
+    let imageArray = [
+        UIImage(named: "avatar 1"),
+        UIImage(named: "avatar 4"),
+        UIImage(named: "avatar 3")
+    ]
+    
     var searchVC: UISearchController!
     
     var searchText: String? {
@@ -30,8 +36,14 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "Movies"
+        
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        setUpSearchBar()
+    }
+    
+    func setUpSearchBar() {
         searchText = ""
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(beginSearch))
@@ -73,15 +85,44 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     
     // MARK: - UITableViewDataSource
     
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        switch section {
+        case 0:
+            return 1
+        default:
+            return data.count
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        
-        cell.textLabel?.text = data[indexPath.row]
-        
-        return cell
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusableCellWithIdentifier("banner") as? MovieBannerCell ?? MovieBannerCell(style: .Default, reuseIdentifier: "banner")
+            
+            cell.images = imageArray
+            
+            return cell
+        default:
+            print("\(indexPath.row)")
+            let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = data[indexPath.row]
+            
+            return cell
+        }
     }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        switch indexPath.section {
+        case 0:
+            return 200
+        default:
+            return 50
+        }
+    }
+    
 }
