@@ -35,7 +35,7 @@ class MainModel {
         data.append(Entry(title:  "10.timeline", storyBoardName: "timeline"))
         data.append(Entry(title:  "11.date-and-time-picker", storyBoardName: "date-and-time-picker"))
         data.append(Entry(title:  "12.photos", storyBoardName: "photos"))
-        data.append(Entry(title:  "13.movie", storyBoardName: "movie"))
+        data.append(Entry(title:  "13.movies", storyBoardName: "movies"))
     }
     
     func size() -> Int {

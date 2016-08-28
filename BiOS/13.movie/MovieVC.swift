@@ -11,14 +11,14 @@ import UIKit
 class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControllerDelegate {
     
     var movies = [
-        "The Angry Birds",
-        "Black Mass",
-        "Inside Out",
+        MovieEntry("The Angry Birds", "avatar 1"),
+        MovieEntry("Black Mass", "avatar 4"),
+        MovieEntry("Inside Out", "avatar 3"),
         ]
     
-    var data: [String]!
+    var data: [MovieEntry]!
     
-    let imageArray = [
+    let bannerImageArray = [
         UIImage(named: "avatar 1"),
         UIImage(named: "avatar 4"),
         UIImage(named: "avatar 3")
@@ -64,8 +64,9 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         if text == "" {
             data = movies
         } else {
-            let searchPredicate = NSPredicate(format: "SELF CONTAINS[c]%@", text)
-            data = (movies as NSArray).filteredArrayUsingPredicate(searchPredicate) as! [String]
+            data = movies.filter() {
+                return $0.title.localizedStandardContainsString(text)
+            }
         }
         self.tableView.reloadData()
     }
@@ -103,14 +104,14 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("banner") as? MovieBannerCell ?? MovieBannerCell(style: .Default, reuseIdentifier: "banner")
             
-            cell.images = imageArray
+            cell.images = bannerImageArray
             
             return cell
         default:
-            print("\(indexPath.row)")
-            let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier(ID_MovieItemCell) as? MovieItemCell ?? MovieItemCell()
             
-            cell.textLabel?.text = data[indexPath.row]
+            cell.titleLabel.text = data[indexPath.row].title
+            cell.coverImageView.image = UIImage(named: data[indexPath.row].imageName)
             
             return cell
         }
@@ -121,7 +122,7 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         case 0:
             return 200
         default:
-            return 50
+            return 150
         }
     }
     
