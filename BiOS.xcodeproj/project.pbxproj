@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E02EA661D7276A900505124 /* MovieItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02EA651D7276A900505124 /* MovieItemCell.swift */; };
+		4E02EA681D72808E00505124 /* MovieEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E02EA671D72808E00505124 /* MovieEntry.swift */; };
+		4E2FBAB51D6EDAB6007DE8A1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FBAB41D6EDAB6007DE8A1 /* Config.swift */; };
 		4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3C3B521D5AACB500E41F58 /* TipCalculator.storyboard */; };
 		4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C3B541D5AAD2C00E41F58 /* TipCalculatorVC.swift */; };
 		4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E40BD341D59AE36009731BF /* AppDelegate.swift */; };
@@ -24,8 +27,13 @@
 		4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */; };
 		4E4F74B51D5C36E900D7298A /* add-photo-from-camera-roll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */; };
 		4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */; };
+		4E6212BD1D6C27B7008B0FBB /* movies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6212BC1D6C27B7008B0FBB /* movies.storyboard */; };
+		4E6212C01D6C287B008B0FBB /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6212BF1D6C287B008B0FBB /* MovieVC.swift */; };
 		4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E6936AC1D5D7425001DF708 /* pull-to-refresh.storyboard */; };
 		4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */; };
+		4E7A17EC1D6D7D4400A38744 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A17EA1D6D7D4400A38744 /* BannerView.swift */; };
+		4E7A17ED1D6D7D4400A38744 /* ExUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A17EB1D6D7D4400A38744 /* ExUIImageView.swift */; };
+		4E7A17EF1D6D7EE900A38744 /* MovieBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7A17EE1D6D7EE900A38744 /* MovieBannerCell.swift */; };
 		4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */; };
 		4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBB9B631D5EA06300468DB1 /* DeleteAndRearrangeVC.swift */; };
 		4EBCE7EA1D659D4500E88F4B /* date-and-time-picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EBCE7E91D659D4500E88F4B /* date-and-time-picker.storyboard */; };
@@ -49,12 +57,14 @@
 		4ECC18B91D6345C1007AAC4A /* ContactsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC18B61D6345C1007AAC4A /* ContactsItemCell.swift */; };
 		4ECC18BA1D6345C1007AAC4A /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECC18B71D6345C1007AAC4A /* ContactsModel.swift */; };
 		4ED129EB1D62D90A00806377 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED129EA1D62D90A00806377 /* User.swift */; };
-		4ED129F11D62F7E400806377 /* ExUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED129F01D62F7E400806377 /* ExUIImageView.swift */; };
 		4EDB8C881D5FECB000CC8C68 /* sticky-section-headers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */; };
 		4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E02EA651D7276A900505124 /* MovieItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieItemCell.swift; path = 13.movie/MovieItemCell.swift; sourceTree = "<group>"; };
+		4E02EA671D72808E00505124 /* MovieEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieEntry.swift; path = 13.movie/MovieEntry.swift; sourceTree = "<group>"; };
+		4E2FBAB41D6EDAB6007DE8A1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4E3C3B521D5AACB500E41F58 /* TipCalculator.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TipCalculator.storyboard; path = "02.tip-calculator/TipCalculator.storyboard"; sourceTree = "<group>"; };
 		4E3C3B541D5AAD2C00E41F58 /* TipCalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TipCalculatorVC.swift; path = "02.tip-calculator/TipCalculatorVC.swift"; sourceTree = "<group>"; };
 		4E40BD311D59AE36009731BF /* BiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +84,13 @@
 		4E4F74B21D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeToDismissKeyboardVC.swift; path = "04.swipe-to-dismiss-keyboard/SwipeToDismissKeyboardVC.swift"; sourceTree = "<group>"; };
 		4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "add-photo-from-camera-roll.storyboard"; path = "05.add-photo-from-camera-roll/add-photo-from-camera-roll.storyboard"; sourceTree = "<group>"; };
 		4E4F74B71D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPhotoFromCameraRollVC.swift; path = "05.add-photo-from-camera-roll/AddPhotoFromCameraRollVC.swift"; sourceTree = "<group>"; };
+		4E6212BC1D6C27B7008B0FBB /* movies.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = movies.storyboard; path = 13.movie/movies.storyboard; sourceTree = "<group>"; };
+		4E6212BF1D6C287B008B0FBB /* MovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieVC.swift; path = 13.movie/MovieVC.swift; sourceTree = "<group>"; };
 		4E6936AC1D5D7425001DF708 /* pull-to-refresh.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "pull-to-refresh.storyboard"; path = "06.pull-to-refresh/pull-to-refresh.storyboard"; sourceTree = "<group>"; };
 		4E6936AF1D5D745F001DF708 /* PullToRefreshVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullToRefreshVC.swift; path = "06.pull-to-refresh/PullToRefreshVC.swift"; sourceTree = "<group>"; };
+		4E7A17EA1D6D7D4400A38744 /* BannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BannerView.swift; path = ex/BannerView.swift; sourceTree = "<group>"; };
+		4E7A17EB1D6D7D4400A38744 /* ExUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExUIImageView.swift; path = ex/ExUIImageView.swift; sourceTree = "<group>"; };
+		4E7A17EE1D6D7EE900A38744 /* MovieBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieBannerCell.swift; path = 13.movie/MovieBannerCell.swift; sourceTree = "<group>"; };
 		4EBB9B601D5EA00B00468DB1 /* delete-and-rearrange.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "delete-and-rearrange.storyboard"; path = "07.delete-and-rearrange/delete-and-rearrange.storyboard"; sourceTree = "<group>"; };
 		4EBB9B631D5EA06300468DB1 /* DeleteAndRearrangeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeleteAndRearrangeVC.swift; path = "07.delete-and-rearrange/DeleteAndRearrangeVC.swift"; sourceTree = "<group>"; };
 		4EBCE7E91D659D4500E88F4B /* date-and-time-picker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "date-and-time-picker.storyboard"; path = "11.date-and-time-picker/date-and-time-picker.storyboard"; sourceTree = "<group>"; };
@@ -99,7 +114,6 @@
 		4ECC18B61D6345C1007AAC4A /* ContactsItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsItemCell.swift; path = "09.contacts-app/ContactsItemCell.swift"; sourceTree = "<group>"; };
 		4ECC18B71D6345C1007AAC4A /* ContactsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsModel.swift; path = "09.contacts-app/ContactsModel.swift"; sourceTree = "<group>"; };
 		4ED129EA1D62D90A00806377 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4ED129F01D62F7E400806377 /* ExUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIImageView.swift; sourceTree = "<group>"; };
 		4EDB8C871D5FECB000CC8C68 /* sticky-section-headers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "sticky-section-headers.storyboard"; path = "08.sticky-section-headers/sticky-section-headers.storyboard"; sourceTree = "<group>"; };
 		4EDB8C8A1D5FECF700CC8C68 /* StickySectionHeadersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StickySectionHeadersVC.swift; path = "08.sticky-section-headers/StickySectionHeadersVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +157,7 @@
 		4E40BD331D59AE36009731BF /* BiOS */ = {
 			isa = PBXGroup;
 			children = (
+				4E6212BE1D6C27BC008B0FBB /* 13.movies */,
 				4EF20F861D66D38500BACC73 /* 12.photos */,
 				4EBCE7EB1D659D4900E88F4B /* 11.date-and-time-picker */,
 				4EC7635C1D6430E50071A4E9 /* 10.timeline */,
@@ -163,6 +178,7 @@
 				4E40BD341D59AE36009731BF /* AppDelegate.swift */,
 				4E40BD3D1D59AE36009731BF /* LaunchScreen.storyboard */,
 				4E40BD401D59AE36009731BF /* Info.plist */,
+				4E2FBAB41D6EDAB6007DE8A1 /* Config.swift */,
 			);
 			path = BiOS;
 			sourceTree = "<group>";
@@ -202,6 +218,18 @@
 				4E4F74B41D5C36E900D7298A /* add-photo-from-camera-roll.storyboard */,
 			);
 			name = "05.add-photo-from-camera-roll";
+			sourceTree = "<group>";
+		};
+		4E6212BE1D6C27BC008B0FBB /* 13.movies */ = {
+			isa = PBXGroup;
+			children = (
+				4E6212BC1D6C27B7008B0FBB /* movies.storyboard */,
+				4E6212BF1D6C287B008B0FBB /* MovieVC.swift */,
+				4E7A17EE1D6D7EE900A38744 /* MovieBannerCell.swift */,
+				4E02EA651D7276A900505124 /* MovieItemCell.swift */,
+				4E02EA671D72808E00505124 /* MovieEntry.swift */,
+			);
+			name = 13.movies;
 			sourceTree = "<group>";
 		};
 		4E6936AE1D5D742A001DF708 /* 06.pull-to-refresh */ = {
@@ -276,7 +304,8 @@
 		4ED129F61D63091200806377 /* ex */ = {
 			isa = PBXGroup;
 			children = (
-				4ED129F01D62F7E400806377 /* ExUIImageView.swift */,
+				4E7A17EA1D6D7D4400A38744 /* BannerView.swift */,
+				4E7A17EB1D6D7D4400A38744 /* ExUIImageView.swift */,
 			);
 			name = ex;
 			sourceTree = "<group>";
@@ -373,6 +402,7 @@
 				4E40BD3C1D59AE36009731BF /* Assets.xcassets in Resources */,
 				4E40BD3A1D59AE36009731BF /* Main.storyboard in Resources */,
 				4E3C3B531D5AACB500E41F58 /* TipCalculator.storyboard in Resources */,
+				4E6212BD1D6C27B7008B0FBB /* movies.storyboard in Resources */,
 				4E40BD4B1D59B26E009731BF /* TapOrHoldCounter.storyboard in Resources */,
 				4E6936AD1D5D7425001DF708 /* pull-to-refresh.storyboard in Resources */,
 				4EBB9B611D5EA00B00468DB1 /* delete-and-rearrange.storyboard in Resources */,
@@ -391,14 +421,19 @@
 			files = (
 				4ECC18B81D6345C1007AAC4A /* AddNewUserVC.swift in Sources */,
 				4E6936B01D5D745F001DF708 /* PullToRefreshVC.swift in Sources */,
+				4E7A17ED1D6D7D4400A38744 /* ExUIImageView.swift in Sources */,
+				4E7A17EC1D6D7D4400A38744 /* BannerView.swift in Sources */,
 				4EC763601D64327A0071A4E9 /* TimelineItemCell.swift in Sources */,
 				4EC763641D64431F0071A4E9 /* AddNewEntryVC.swift in Sources */,
+				4E7A17EF1D6D7EE900A38744 /* MovieBannerCell.swift in Sources */,
 				4E40BD371D59AE36009731BF /* MainViewController.swift in Sources */,
 				4EC7635E1D64324B0071A4E9 /* TimelineVC.swift in Sources */,
 				4EBB9B641D5EA06300468DB1 /* DeleteAndRearrangeVC.swift in Sources */,
 				4EC8EE3D1D6AD0540036ACC5 /* PhotoDetailVC.swift in Sources */,
 				4EDB8C8B1D5FECF700CC8C68 /* StickySectionHeadersVC.swift in Sources */,
+				4E6212C01D6C287B008B0FBB /* MovieVC.swift in Sources */,
 				4E3C3B551D5AAD2C00E41F58 /* TipCalculatorVC.swift in Sources */,
+				4E02EA681D72808E00505124 /* MovieEntry.swift in Sources */,
 				4ECC18BA1D6345C1007AAC4A /* ContactsModel.swift in Sources */,
 				4E4F74B31D5C2B0A00D7298A /* SwipeToDismissKeyboardVC.swift in Sources */,
 				4E4F74B81D5C372A00D7298A /* AddPhotoFromCameraRollVC.swift in Sources */,
@@ -410,12 +445,13 @@
 				4EC8EE3E1D6AD0540036ACC5 /* PhotoDetailView.swift in Sources */,
 				4E4F74AE1D5C287500D7298A /* SecondViewController.swift in Sources */,
 				4ECC18B91D6345C1007AAC4A /* ContactsItemCell.swift in Sources */,
+				4E02EA661D7276A900505124 /* MovieItemCell.swift in Sources */,
 				4EBCE7ED1D659DCF00E88F4B /* DateAndTimePickerVC.swift in Sources */,
+				4E2FBAB51D6EDAB6007DE8A1 /* Config.swift in Sources */,
 				4E4F74AD1D5C287500D7298A /* PassDataToOtherViewsVC.swift in Sources */,
 				4EC8EE421D6AD0540036ACC5 /* PhotoItemCell.swift in Sources */,
 				4EC8EE411D6AD0540036ACC5 /* PhotosVC.swift in Sources */,
 				4E40BD351D59AE36009731BF /* AppDelegate.swift in Sources */,
-				4ED129F11D62F7E400806377 /* ExUIImageView.swift in Sources */,
 				4ECC18B31D634574007AAC4A /* ContactsVC.swift in Sources */,
 				4EC8EE3F1D6AD0540036ACC5 /* PhotoItem.swift in Sources */,
 			);
