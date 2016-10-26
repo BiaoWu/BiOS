@@ -14,22 +14,22 @@ class AddPhotoFromCameraRollVC: UIViewController, UIImagePickerControllerDelegat
     let imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
-        imageView.contentMode = .ScaleAspectFit
+        imageView.contentMode = .scaleAspectFit
         
         imagePicker.delegate = self
     }
 
-    @IBAction func selectPhoto(sender: AnyObject) {
+    @IBAction func selectPhoto(_ sender: AnyObject) {
         
         
-        presentViewController(imagePicker, animated: true, completion: nil)
+        present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         imageView.image = image
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 

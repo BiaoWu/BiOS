@@ -25,7 +25,7 @@ class MovieItemCell: UITableViewCell {
     }
     
     init () {
-        super.init(style: .Default , reuseIdentifier: ID_MovieItemCell)
+        super.init(style: .default , reuseIdentifier: ID_MovieItemCell)
         
         setUpViews()
         setUpViewsConstraint()
@@ -43,27 +43,27 @@ class MovieItemCell: UITableViewCell {
         self.coverImageView.addSubview(titleLabel)
         
         lineView = UIView()
-        lineView.backgroundColor = UIColor.grayColor()
+        lineView.backgroundColor = UIColor.gray
         self.coverImageView.addSubview(lineView)
     }
     
     func setUpViewsConstraint() {
         coverImageView.translatesAutoresizingMaskIntoConstraints = false
-        coverImageView.topAnchor.constraintEqualToAnchor(self.contentView.topAnchor).active = true
-        coverImageView.leftAnchor.constraintEqualToAnchor(self.contentView.leftAnchor).active = true
-        coverImageView.bottomAnchor.constraintEqualToAnchor(self.contentView.bottomAnchor).active = true
-        coverImageView.widthAnchor.constraintEqualToAnchor(coverImageView.heightAnchor, multiplier: 1.0).active = true
+        coverImageView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+        coverImageView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
+        coverImageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        coverImageView.widthAnchor.constraint(equalTo: coverImageView.heightAnchor, multiplier: 1.0).isActive = true
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraintEqualToAnchor(self.contentView.topAnchor).active = true
-        titleLabel.rightAnchor.constraintEqualToAnchor(self.contentView.rightAnchor).active = true
-        titleLabel.bottomAnchor.constraintEqualToAnchor(self.contentView.bottomAnchor).active = true
-        titleLabel.leftAnchor.constraintEqualToAnchor(coverImageView.rightAnchor).active = true
+        titleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        titleLabel.leftAnchor.constraint(equalTo: coverImageView.rightAnchor).isActive = true
         
         lineView.translatesAutoresizingMaskIntoConstraints = false
-        lineView.heightAnchor.constraintEqualToConstant(0.5).active = true
-        lineView.rightAnchor.constraintEqualToAnchor(self.contentView.rightAnchor).active = true
-        lineView.bottomAnchor.constraintEqualToAnchor(self.contentView.bottomAnchor).active = true
-        lineView.leftAnchor.constraintEqualToAnchor(self.contentView.leftAnchor).active = true
+        lineView.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+        lineView.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
+        lineView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        lineView.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
     }
 }

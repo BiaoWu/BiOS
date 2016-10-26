@@ -33,9 +33,9 @@ class TapOrHoldCounterVC: UIViewController {
         count += 1
     }
     
-    func longPress(sender: UIGestureRecognizer) {
+    func longPress(_ sender: UIGestureRecognizer) {
         switch sender.state {
-        case .Changed:
+        case .changed:
             count += 1
         default:
             //ignore
@@ -43,7 +43,7 @@ class TapOrHoldCounterVC: UIViewController {
         }
     }
     
-    @IBAction func reset(sender: AnyObject) {
+    @IBAction func reset(_ sender: AnyObject) {
         count = 0
     }
 }

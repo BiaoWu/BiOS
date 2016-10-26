@@ -43,7 +43,7 @@ class ContactsModel {
         data.append(john)
     }
     
-    func addNewUser(user: User) {
+    func addNewUser(_ user: User) {
         data.append(user)
     }
     
@@ -51,7 +51,7 @@ class ContactsModel {
         return 2
     }
     
-    func numberOfRowsInSection(section: Int) -> Int {
+    func numberOfRowsInSection(_ section: Int) -> Int {
         switch section {
         case 0:
             return recent.count
@@ -62,7 +62,7 @@ class ContactsModel {
         }
     }
     
-    func titleForHeaderInSection(section: Int) -> String? {
+    func titleForHeaderInSection(_ section: Int) -> String? {
         switch section {
         case 0:
             return "1"
@@ -73,7 +73,7 @@ class ContactsModel {
         }
     }
     
-    func getItem(section: Int, _ row: Int) -> User? {
+    func getItem(_ section: Int, _ row: Int) -> User? {
         switch section {
         case 0:
             return recent[row]

@@ -23,39 +23,39 @@ class StickySectionHeadersVC: UITableViewController {
     var sortedKeys: Array<String>!
     
     override func viewDidLoad() {
-        sortedKeys = data.keys.sort()
+        sortedKeys = data.keys.sorted()
     }
     
     // MARK: - Table view data source
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return sortedKeys.count
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (data[getSectionKey(section)]?.count)!
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = data[getSectionKey(indexPath.section)]?[indexPath.row]
+        cell.textLabel?.text = data[getSectionKey((indexPath as NSIndexPath).section)]?[(indexPath as NSIndexPath).row]
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let str = data[getSectionKey(section)]![0]
         let char = str[str.startIndex]
         return String(char)
     }
     
-    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return sortedKeys
     }
     
-    private func getSectionKey(section: Int) -> String {
-        return sortedKeys[sortedKeys.startIndex.advancedBy(section)]
+    fileprivate func getSectionKey(_ section: Int) -> String {
+        return sortedKeys[sortedKeys.startIndex.advanced(by: section)]
     }
 }

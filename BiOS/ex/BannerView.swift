@@ -7,6 +7,26 @@
 //
 
 import UIKit
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class BannerView: UIView {
     
@@ -20,7 +40,7 @@ class BannerView: UIView {
     
     var images: [UIImage?]? {
         didSet {
-            guard let images = images where images.count > 0 else {
+            guard let images = images , images.count > 0 else {
                 print("Are you kidding me?")
                 return
             }
@@ -46,7 +66,7 @@ class BannerView: UIView {
     }
     
     convenience init() {
-        self.init(frame: CGRectZero)
+        self.init(frame: CGRect.zero)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -56,22 +76,22 @@ class BannerView: UIView {
     
     // MARK: - Privite Methods
     
-    private func setUpView() {
+    fileprivate func setUpView() {
         setUpScrollView()
         setUpPageIndicator()
     }
     
-    private func setUpScrollView() {
+    fileprivate func setUpScrollView() {
         scrollView = UIScrollView()
         scrollView.delegate = self
-        scrollView.pagingEnabled = true
+        scrollView.isPagingEnabled = true
         scrollView.bounces = false
         scrollView.showsHorizontalScrollIndicator = false
         
         self.addSubview(scrollView)
     }
     
-    private func setUpImageViews() {
+    fileprivate func setUpImageViews() {
         if let images = images {
             var imageView: UIImageView!
             for _ in 0..<images.count + 2 {
@@ -82,7 +102,7 @@ class BannerView: UIView {
         }
     }
     
-    private func updateImageViews(images: [UIImage?]) {
+    fileprivate func updateImageViews(_ images: [UIImage?]) {
         imageViews[0].image = images[images.count - 1]
         imageViews[imageViews.count - 1].image = images[0]
         
@@ -91,43 +111,43 @@ class BannerView: UIView {
         }
     }
     
-    private func setUpImageView(imageView: UIImageView) {
+    fileprivate func setUpImageView(_ imageView: UIImageView) {
         //        imageView.userInteractionEnabled = true
-        imageView.contentMode = UIViewContentMode.ScaleAspectFill
-        imageView.backgroundColor = UIColor.orangeColor()
+        imageView.contentMode = UIViewContentMode.scaleAspectFill
+        imageView.backgroundColor = UIColor.orange
         imageView.clipsToBounds = true
         self.scrollView.addSubview(imageView)
     }
     
-    private func setUpPageIndicator() {
+    fileprivate func setUpPageIndicator() {
         pageIndicator = UIPageControl()
-        pageIndicator.pageIndicatorTintColor = UIColor.whiteColor()
-        pageIndicator.currentPageIndicatorTintColor = UIColor.redColor()
+        pageIndicator.pageIndicatorTintColor = UIColor.white
+        pageIndicator.currentPageIndicatorTintColor = UIColor.red
         
         self.addSubview(pageIndicator)
         
         pageIndicator.translatesAutoresizingMaskIntoConstraints = false
-        pageIndicator.rightAnchor.constraintEqualToAnchor(self.rightAnchor, constant: -10).active = true
-        pageIndicator.bottomAnchor.constraintEqualToAnchor(self.bottomAnchor).active = true
+        pageIndicator.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        pageIndicator.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
     override func layoutSubviews() {
-        self.scrollView.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
+        self.scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         
         if images?.count > 0 {
-            self.scrollView.contentSize = CGSizeMake(self.frame.width * CGFloat(imageViews.count), self.frame.height)
+            self.scrollView.contentSize = CGSize(width: self.frame.width * CGFloat(imageViews.count), height: self.frame.height)
             self.scrollView.setContentOffset(CGPoint(x: self.frame.width, y: 0), animated: false)
             currentOffsetX = self.frame.width
             
             for i in 0..<imageViews.count {
-                self.imageViews[i].frame = CGRectMake(self.frame.width * CGFloat(i), 0, self.frame.width, self.frame.height)
+                self.imageViews[i].frame = CGRect(x: self.frame.width * CGFloat(i), y: 0, width: self.frame.width, height: self.frame.height)
             }
         }
     }
 }
 
 extension BannerView: UIScrollViewDelegate {
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let newOffsetX = scrollView.contentOffset.x
         
         if newOffsetX == currentOffsetX {

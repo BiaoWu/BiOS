@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AddNewUserListener {
-    func onAddNewUser(user: User)
+    func onAddNewUser(_ user: User)
 }
 
 class AddNewUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -25,14 +25,14 @@ class AddNewUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillHide), name: UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
         
         self.avatarImage.circle()
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(save))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(save))
     }
     
     func dismissKeyboard() {
@@ -40,14 +40,14 @@ class AddNewUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
     }
     
     deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
-    func keyboardWillShow(sender: NSNotification) {
+    func keyboardWillShow(_ sender: Notification) {
         self.view.frame.origin.y = -150
     }
     
-    func keyboardWillHide(sender: NSNotification) {
+    func keyboardWillHide(_ sender: Notification) {
         self.view.frame.origin.y = 0
     }
     
@@ -57,22 +57,22 @@ class AddNewUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             return
         }
         
-        guard let name = nameTextField.text where name.characters.count > 0 else {
+        guard let name = nameTextField.text , name.characters.count > 0 else {
             print("name cannot be nil")
             return
         }
         
-        guard let phone = phoneTextField.text where phone.characters.count > 0 else {
+        guard let phone = phoneTextField.text , phone.characters.count > 0 else {
             print("phone cannot be nil")
             return
         }
         
-        guard let email = emailTextField.text where email.characters.count > 0 else {
+        guard let email = emailTextField.text , email.characters.count > 0 else {
             print("email cannot be nil")
             return
         }
         
-        guard let note = noteTextField.text where note.characters.count > 0 else {
+        guard let note = noteTextField.text , note.characters.count > 0 else {
             print("note cannot be nil")
             return
         }
@@ -85,19 +85,19 @@ class AddNewUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigat
             notes: note)
         )
         
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController!.popViewController(animated: true)
     }
     
-    @IBAction func addNewPhoto(sender: AnyObject) {
+    @IBAction func addNewPhoto(_ sender: AnyObject) {
         let vc = UIImagePickerController()
         vc.delegate = self
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         avatarImage.image = image
         
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }

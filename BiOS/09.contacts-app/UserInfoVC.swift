@@ -24,7 +24,7 @@ class UserInfoVC: UIViewController {
         fillUser(user!)
     }
     
-    func fillUser(user: User) {
+    func fillUser(_ user: User) {
         avatarImage.image = user.avatar
         nameLabel.text = user.name
         emailLabel.text = user.email

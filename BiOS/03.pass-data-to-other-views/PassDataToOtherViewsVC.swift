@@ -16,9 +16,9 @@ class PassDataToOtherViewsVC: UIViewController {
         super.viewDidLoad()
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segue" {
-            let second = segue.destinationViewController as! SecondViewController
+            let second = segue.destination as! SecondViewController
             
             second.passData = inputText.text
         }

@@ -16,7 +16,7 @@ class SwipeToDismissKeyboardVC: UIViewController {
         super.viewDidLoad()
         
         let gesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeDismiss))
-        gesture.direction = .Down
+        gesture.direction = .down
         
         textView.addGestureRecognizer(gesture)
         

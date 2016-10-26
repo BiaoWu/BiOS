@@ -23,15 +23,15 @@ class PhotoDetailView: UIScrollView {
         self.addSubview(photoImage)
         
         contentLabel = UITextView(frame: CGRect(x: 0, y: self.frame.width, width: self.frame.width, height: 0))
-        contentLabel.editable = false
-        contentLabel.selectable = false
-        contentLabel.scrollEnabled = false
-        contentLabel.font = UIFont.systemFontOfSize(20)
+        contentLabel.isEditable = false
+        contentLabel.isSelectable = false
+        contentLabel.isScrollEnabled = false
+        contentLabel.font = UIFont.systemFont(ofSize: 20)
         
         self.addSubview(contentLabel)
     }
     
-    override func willMoveToSuperview(newSuperview: UIView?) {
+    override func willMove(toSuperview newSuperview: UIView?) {
         if let item = photoItem {
             photoImage.image = UIImage(named: item.itemImage!)
         }

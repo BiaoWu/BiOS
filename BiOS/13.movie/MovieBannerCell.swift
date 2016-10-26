@@ -26,10 +26,10 @@ class MovieBannerCell: UITableViewCell {
         
         // 1.
         bannerView.translatesAutoresizingMaskIntoConstraints = false
-        bannerView.leadingAnchor.constraintEqualToAnchor(self.contentView.leadingAnchor).active = true
-        bannerView.topAnchor.constraintEqualToAnchor(self.contentView.topAnchor).active = true
-        bannerView.trailingAnchor.constraintEqualToAnchor(self.contentView.trailingAnchor).active = true
-        bannerView.bottomAnchor.constraintEqualToAnchor(self.contentView.bottomAnchor).active = true
+        bannerView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
+        bannerView.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+        bannerView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
+        bannerView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

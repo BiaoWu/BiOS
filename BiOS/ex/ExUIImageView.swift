@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImageView {
     func circle() {
-        self.contentMode = .ScaleAspectFill
+        self.contentMode = .scaleAspectFill
         self.layer.cornerRadius = self.frame.height / 2
         self.layer.masksToBounds = false
         self.clipsToBounds = true

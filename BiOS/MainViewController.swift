@@ -12,20 +12,20 @@ class MainViewController: UITableViewController {
     
     var model = MainModel()
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.size()
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
         
-        cell.textLabel?.text = model.getItem(indexPath.row).title
+        cell.textLabel?.text = model.getItem((indexPath as NSIndexPath).row).title
         
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        showViewController(model.providerVc(indexPath.row), sender: nil)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        show(model.providerVc((indexPath as NSIndexPath).row), sender: nil)
     }
 }
 

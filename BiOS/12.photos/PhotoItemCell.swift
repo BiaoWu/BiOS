@@ -12,7 +12,7 @@ class PhotoItemCell: UICollectionViewCell {
     
     @IBOutlet weak var photoImage: UIImageView!
     
-    func setPhotoItem(item: PhotoItem) {
+    func setPhotoItem(_ item: PhotoItem) {
         photoImage.image = UIImage(named: item.itemImage!)
     }
 }

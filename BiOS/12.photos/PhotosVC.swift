@@ -23,8 +23,8 @@ class PhotosVC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
         self.title = "Photos"
     }
     
-    private func initData() {
-        if let inputFile = NSBundle.mainBundle().pathForResource("photo_items", ofType: "plist")  {
+    fileprivate func initData() {
+        if let inputFile = Bundle.main.path(forResource: "photo_items", ofType: "plist")  {
             let inputDataArray = NSArray(contentsOfFile: inputFile)
             
             for inputData in inputDataArray as! [Dictionary<String, String>] {
@@ -35,22 +35,22 @@ class PhotosVC: UICollectionViewController, UICollectionViewDelegateFlowLayout{
     
     // MARK: UICollectionViewDataSource
     
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! PhotoItemCell
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PhotoItemCell
         
         // Configure the cell
-        cell.setPhotoItem(data[indexPath.row])
+        cell.setPhotoItem(data[(indexPath as NSIndexPath).row])
         
         return cell
     }
     
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = PhotoDetailVC()
-        vc.photoItem = data[indexPath.row]
-        showViewController(vc, sender: nil)
+        vc.photoItem = data[(indexPath as NSIndexPath).row]
+        show(vc, sender: nil)
     }
 }

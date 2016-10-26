@@ -20,7 +20,7 @@ class MainModel {
         }
     }
     
-    private var data = [Entry]()
+    fileprivate var data = [Entry]()
     
     init() {
         data.append(Entry(title:  "01.TapOrHoldCounter", storyBoardName: "TapOrHoldCounter"))
@@ -42,11 +42,11 @@ class MainModel {
         return data.count
     }
     
-    func getItem(index: Int) -> Entry {
+    func getItem(_ index: Int) -> Entry {
         return data[index]
     }
     
-    func providerVc(index: Int) -> UIViewController {
+    func providerVc(_ index: Int) -> UIViewController {
         return UIStoryboard.init(name: getItem(index).storyBoardName, bundle: nil).instantiateInitialViewController()!
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol OnAddNewEntryDelegate {
-    func onAddNewEntry(entry: TimelineEntry)
+    func onAddNewEntry(_ entry: TimelineEntry)
 }
 
 class AddNewEntryVC: UIViewController {
@@ -18,12 +18,12 @@ class AddNewEntryVC: UIViewController {
     
     var delegate: OnAddNewEntryDelegate?
     
-    var fomatter = NSDateFormatter()
+    var fomatter = DateFormatter()
     
     override func viewDidLoad() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Save, target: self, action: #selector(save))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(save))
         
-        fomatter.locale = NSLocale.currentLocale()
+        fomatter.locale = Locale.current
         fomatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
     }
     
@@ -38,13 +38,13 @@ class AddNewEntryVC: UIViewController {
             return
         }
         
-        let now = fomatter.stringFromDate(NSDate())
+        let now = fomatter.string(from: Date())
         
         //todo
         let location = "BeiJing"
         
         delegate?.onAddNewEntry(TimelineEntry(cover: image, date: now, content: content, location: location))
         
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController!.popViewController(animated: true)
     }
 }

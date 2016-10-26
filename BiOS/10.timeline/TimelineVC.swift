@@ -15,37 +15,37 @@ class TimelineVC: UITableViewController, OnAddNewEntryDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Stop, target: self, action: #selector(goBack))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(goBack))
     }
     
     func goBack() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Table view data source
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TimelineItemCell", forIndexPath: indexPath) as! TimelineItemCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TimelineItemCell", for: indexPath) as! TimelineItemCell
         
         // Configure the cell...
-        cell.entry = data[indexPath.row]
+        cell.entry = data[(indexPath as NSIndexPath).row]
         
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addNewEntry" {
-            let vc = segue.destinationViewController as! AddNewEntryVC
+            let vc = segue.destination as! AddNewEntryVC
             
             vc.delegate = self
         }
     }
     
-    func onAddNewEntry(entry: TimelineEntry) {
+    func onAddNewEntry(_ entry: TimelineEntry) {
         data.append(entry)
         self.tableView.reloadData()
     }

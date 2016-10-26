@@ -15,28 +15,28 @@ class DateAndTimePickerVC: UIViewController {
     
     @IBOutlet weak var dateTimeLabel: UILabel!
     
-    let dateFormatter = NSDateFormatter()
-    let timeFormatter = NSDateFormatter()
+    let dateFormatter = DateFormatter()
+    let timeFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Date And Time Picker"
         
-        datePicker.datePickerMode = .Date
-        timePicker.datePickerMode = .Time
+        datePicker.datePickerMode = .date
+        timePicker.datePickerMode = .time
         
         
-        dateFormatter.dateStyle = .ShortStyle
-        dateFormatter.locale = NSLocale.currentLocale()
+        dateFormatter.dateStyle = .short
+        dateFormatter.locale = Locale.current
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
-        timeFormatter.timeStyle = .ShortStyle
-        timeFormatter.locale = NSLocale.currentLocale()
+        timeFormatter.timeStyle = .short
+        timeFormatter.locale = Locale.current
         timeFormatter.dateFormat = "HH:mm:ss"
     }
     
-    @IBAction func done(sender: AnyObject) {
-        dateTimeLabel.text = "Date: \(dateFormatter.stringFromDate(datePicker.date)) \t Time: \(timeFormatter.stringFromDate(timePicker.date))"
+    @IBAction func done(_ sender: AnyObject) {
+        dateTimeLabel.text = "Date: \(dateFormatter.string(from: datePicker.date)) \t Time: \(timeFormatter.string(from: timePicker.date))"
     }
 }

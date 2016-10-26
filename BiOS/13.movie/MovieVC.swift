@@ -38,7 +38,7 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         super.viewDidLoad()
         self.title = "Movies"
         
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
         setUpSearchBar()
     }
@@ -46,7 +46,7 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     func setUpSearchBar() {
         searchText = ""
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: #selector(beginSearch))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(beginSearch))
         
         searchVC = UISearchController(searchResultsController: nil)
         searchVC.searchResultsUpdater = self
@@ -60,12 +60,12 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         searchVC.searchBar.becomeFirstResponder()
     }
     
-    func reload(text: String) {
+    func reload(_ text: String) {
         if text == "" {
             data = movies
         } else {
             data = movies.filter() {
-                return $0.title.localizedStandardContainsString(text)
+                return $0.title.localizedStandardContains(text)
             }
         }
         self.tableView.reloadData()
@@ -73,24 +73,24 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
     
     // MARK: - UISearchControllerDelegate
     
-    func willDismissSearchController(searchController: UISearchController) {
+    func willDismissSearchController(_ searchController: UISearchController) {
         self.tableView.tableHeaderView = nil
     }
     
     // MARK: - UISearchResultsUpdating
     
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         print("searchController.searchBar.text = \(searchController.searchBar.text)")
         searchText = searchController.searchBar.text
     }
     
     // MARK: - UITableViewDataSource
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
@@ -99,26 +99,26 @@ class MovieVC: UITableViewController, UISearchResultsUpdating, UISearchControlle
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        switch indexPath.section {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch (indexPath as NSIndexPath).section {
         case 0:
-            let cell = tableView.dequeueReusableCellWithIdentifier("banner") as? MovieBannerCell ?? MovieBannerCell(style: .Default, reuseIdentifier: "banner")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "banner") as? MovieBannerCell ?? MovieBannerCell(style: .default, reuseIdentifier: "banner")
             
             cell.images = bannerImageArray
             
             return cell
         default:
-            let cell = tableView.dequeueReusableCellWithIdentifier(ID_MovieItemCell) as? MovieItemCell ?? MovieItemCell()
+            let cell = tableView.dequeueReusableCell(withIdentifier: ID_MovieItemCell) as? MovieItemCell ?? MovieItemCell()
             
-            cell.titleLabel.text = data[indexPath.row].title
-            cell.coverImageView.image = UIImage(named: data[indexPath.row].imageName)
+            cell.titleLabel.text = data[(indexPath as NSIndexPath).row].title
+            cell.coverImageView.image = UIImage(named: data[(indexPath as NSIndexPath).row].imageName)
             
             return cell
         }
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        switch indexPath.section {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch (indexPath as NSIndexPath).section {
         case 0:
             return 200
         default:

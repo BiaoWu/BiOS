@@ -17,11 +17,11 @@ class TipCalculatorVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var tipSlider: UISlider!
     
     
-    var formatter = NSNumberFormatter()
+    var formatter = NumberFormatter()
     
     var mealPrice = 0.0 {
         didSet {
-            inputText.text = formatter.stringFromNumber(mealPrice)
+            inputText.text = formatter.string(from: NSNumber(value: mealPrice))
         }
     }
     
@@ -33,49 +33,49 @@ class TipCalculatorVC: UIViewController, UITextFieldDelegate {
     }
     var tipPrice = 0.0 {
         didSet {
-            tipPriceLabel.text = formatter.stringFromNumber(tipPrice)
+            tipPriceLabel.text = formatter.string(from: NSNumber(value: tipPrice))
         }
     }
     var totalPrice = 0.0 {
         didSet {
-            totalPriceLabel.text = formatter.stringFromNumber(totalPrice)
+            totalPriceLabel.text = formatter.string(from: NSNumber(value: totalPrice))
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        formatter.numberStyle = .CurrencyStyle
+        formatter.numberStyle = .currency
         
-        inputText.keyboardType = UIKeyboardType.NumberPad
+        inputText.keyboardType = UIKeyboardType.numberPad
         
         addToolBar(inputText)
         
         tipSlider.minimumValue = 0
         tipSlider.maximumValue = 100
         tipSlider.value = 25
-        tipSlider.addTarget(self, action: #selector(tipSliderValueChange), forControlEvents: UIControlEvents.ValueChanged)
+        tipSlider.addTarget(self, action: #selector(tipSliderValueChange), for: UIControlEvents.valueChanged)
     }
     
     //toolbar
-    func addToolBar(textField: UITextField){
+    func addToolBar(_ textField: UITextField){
         let toolBar = UIToolbar()
-        toolBar.barStyle = UIBarStyle.Default
-        toolBar.translucent = true
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
         toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
         
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: #selector(donePressed))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(donePressed))
         
-        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         
         toolBar.setItems([space, doneButton], animated: false)
-        toolBar.userInteractionEnabled = true
+        toolBar.isUserInteractionEnabled = true
         toolBar.sizeToFit()
         
         textField.delegate = self
         textField.inputAccessoryView = toolBar
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
         if textField == self.inputText {
             reset()
         }
